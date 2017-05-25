@@ -1,5 +1,5 @@
 # WQFunctionCommponents
 功能组件
 ### 支持CocoaPods
-pod 'WQFunctionCommponents','~> '0.0.1'
+pod 'WQFunctionCommponents','~> '0.0.2'
 ---
