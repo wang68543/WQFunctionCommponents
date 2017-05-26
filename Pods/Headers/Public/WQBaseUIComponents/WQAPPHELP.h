@@ -1,0 +1,1 @@
+../../../../../WQBaseUIDemo/WQBaseUIComponents/UIHelp/UIFounctionHelp/WQAPPHELP.h

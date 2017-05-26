@@ -1,0 +1,1 @@
+../../../../../WQBaseUIDemo/WQBaseUIComponents/CommonTableView/Model/WQCommonBaseItem.h

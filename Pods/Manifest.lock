@@ -1,0 +1,35 @@
+PODS:
+  - WQBaseUIComponents (0.0.1):
+    - WQBaseUIComponents/AnmationViews (= 0.0.1)
+    - WQBaseUIComponents/UICustom (= 0.0.1)
+    - WQBaseUIComponents/UIHelp (= 0.0.1)
+    - WQBaseUIComponents/WQCommonTableView (= 0.0.1)
+  - WQBaseUIComponents/AnmationViews (0.0.1):
+    - WQBaseUIComponents/AnmationViews/Animation (= 0.0.1)
+  - WQBaseUIComponents/AnmationViews/Animation (0.0.1)
+  - WQBaseUIComponents/UICustom (0.0.1):
+    - WQBaseUIComponents/UICustom/StarView (= 0.0.1)
+    - WQBaseUIComponents/UICustom/ViewCustom (= 0.0.1)
+  - WQBaseUIComponents/UICustom/StarView (0.0.1)
+  - WQBaseUIComponents/UICustom/ViewCustom (0.0.1)
+  - WQBaseUIComponents/UIHelp (0.0.1):
+    - WQBaseUIComponents/UIHelp/UIFounctionHelp (= 0.0.1)
+    - WQBaseUIComponents/UIHelp/UITransitionHelp (= 0.0.1)
+  - WQBaseUIComponents/UIHelp/UIFounctionHelp (0.0.1)
+  - WQBaseUIComponents/UIHelp/UITransitionHelp (0.0.1)
+  - WQBaseUIComponents/WQCommonTableView (0.0.1):
+    - WQBaseUIComponents/UIHelp
+
+DEPENDENCIES:
+  - WQBaseUIComponents (from `/Users/ggg/Desktop/Components/WQBaseUIDemo`)
+
+EXTERNAL SOURCES:
+  WQBaseUIComponents:
+    :path: "/Users/ggg/Desktop/Components/WQBaseUIDemo"
+
+SPEC CHECKSUMS:
+  WQBaseUIComponents: 21e911d5cfb58388b8357cc5a5156e83be5c8303
+
+PODFILE CHECKSUM: 388dde665e68e717cb001a3f88d7ef9ef2ac9fd6
+
+COCOAPODS: 1.2.1

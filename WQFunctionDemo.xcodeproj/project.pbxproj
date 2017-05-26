@@ -7,6 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		229B5D748F7A88A9B8DC71E4 /* libPods-WQFunctionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2F726620D15847753C45A2 /* libPods-WQFunctionDemo.a */; };
+		DE52CA3E1ED8071600FDE643 /* WQAlertCenterOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9EC1ED8071600FDE643 /* WQAlertCenterOptionsView.m */; };
+		DE52CA3F1ED8071600FDE643 /* WQAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9EE1ED8071600FDE643 /* WQAlertController.m */; };
+		DE52CA401ED8071600FDE643 /* WQCommonAlertBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9F11ED8071600FDE643 /* WQCommonAlertBottomView.m */; };
+		DE52CA411ED8071600FDE643 /* WQCommonAlertTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9F31ED8071600FDE643 /* WQCommonAlertTitleView.m */; };
+		DE52CA421ED8071600FDE643 /* WQSelectDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9F51ED8071600FDE643 /* WQSelectDateController.m */; };
+		DE52CA431ED8071600FDE643 /* WQBannerLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9F81ED8071600FDE643 /* WQBannerLoopView.m */; };
+		DE52CA441ED8071600FDE643 /* WQClendarDayUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9FB1ED8071600FDE643 /* WQClendarDayUnit.m */; };
+		DE52CA451ED8071600FDE643 /* WQClendarUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9FD1ED8071600FDE643 /* WQClendarUnit.m */; };
+		DE52CA461ED8071600FDE643 /* WQClendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9FF1ED8071600FDE643 /* WQClendarView.m */; };
+		DE52CA471ED8071600FDE643 /* ExamineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA021ED8071600FDE643 /* ExamineCell.m */; };
+		DE52CA481ED8071600FDE643 /* ExamineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA031ED8071600FDE643 /* ExamineCell.xib */; };
+		DE52CA491ED8071700FDE643 /* GuDExaminationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA051ED8071600FDE643 /* GuDExaminationItem.m */; };
+		DE52CA4A1ED8071700FDE643 /* GuDExamineDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA071ED8071600FDE643 /* GuDExamineDataViewController.m */; };
+		DE52CA4B1ED8071700FDE643 /* GuDExamineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA091ED8071600FDE643 /* GuDExamineViewController.m */; };
+		DE52CA4C1ED8071700FDE643 /* WQTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA0C1ED8071600FDE643 /* WQTagCollectionViewCell.m */; };
+		DE52CA4D1ED8071700FDE643 /* WQTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA0D1ED8071600FDE643 /* WQTagCollectionViewCell.xib */; };
+		DE52CA4E1ED8071700FDE643 /* WQTagsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA0F1ED8071600FDE643 /* WQTagsFlowLayout.m */; };
+		DE52CA4F1ED8071700FDE643 /* WQSelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA121ED8071600FDE643 /* WQSelectPhotoViewController.m */; };
+		DE52CA501ED8071700FDE643 /* WQActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA151ED8071600FDE643 /* WQActionSheetCell.m */; };
+		DE52CA511ED8071700FDE643 /* WQActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA171ED8071600FDE643 /* WQActionSheetController.m */; };
+		DE52CA521ED8071700FDE643 /* WQSelecOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA191ED8071600FDE643 /* WQSelecOptionsView.m */; };
+		DE52CA531ED8071700FDE643 /* WQSelectOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA1B1ED8071600FDE643 /* WQSelectOptionsCell.m */; };
+		DE52CA541ED8071700FDE643 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA1E1ED8071600FDE643 /* Resources.xcassets */; };
+		DE52CA551ED8071700FDE643 /* 00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA201ED8071600FDE643 /* 00.jpg */; };
+		DE52CA561ED8071700FDE643 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA211ED8071600FDE643 /* 01.jpg */; };
+		DE52CA571ED8071700FDE643 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA221ED8071600FDE643 /* 02.jpg */; };
+		DE52CA581ED8071700FDE643 /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA231ED8071600FDE643 /* 03.jpg */; };
+		DE52CA591ED8071700FDE643 /* 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA241ED8071600FDE643 /* 04.jpg */; };
+		DE52CA5A1ED8071700FDE643 /* 05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA251ED8071600FDE643 /* 05.jpg */; };
+		DE52CA5B1ED8071700FDE643 /* 06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA261ED8071600FDE643 /* 06.jpg */; };
+		DE52CA5C1ED8071700FDE643 /* 07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA271ED8071600FDE643 /* 07.jpg */; };
+		DE52CA5D1ED8071700FDE643 /* TabbbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA291ED8071600FDE643 /* TabbbarController.storyboard */; };
+		DE52CA5E1ED8071700FDE643 /* WQShareActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA2C1ED8071600FDE643 /* WQShareActionCell.m */; };
+		DE52CA5F1ED8071700FDE643 /* WQShareActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE52CA2D1ED8071600FDE643 /* WQShareActionCell.xib */; };
+		DE52CA601ED8071700FDE643 /* WQShareActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA2F1ED8071600FDE643 /* WQShareActionItem.m */; };
+		DE52CA611ED8071700FDE643 /* WQShareActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA311ED8071600FDE643 /* WQShareActionViewController.m */; };
+		DE52CA621ED8071700FDE643 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA341ED8071600FDE643 /* MainNavController.m */; };
+		DE52CA631ED8071700FDE643 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA361ED8071600FDE643 /* MainTabBarController.m */; };
+		DE52CA641ED8071700FDE643 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA381ED8071600FDE643 /* MenuViewController.m */; };
+		DE52CA651ED8071700FDE643 /* WQContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA3A1ED8071600FDE643 /* WQContainerViewController.m */; };
+		DE52CA661ED8071700FDE643 /* GYChangeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA3D1ED8071600FDE643 /* GYChangeTextView.m */; };
 		DE7747891ED3378800E034D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747881ED3378800E034D4 /* main.m */; };
 		DE77478C1ED3378800E034D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77478B1ED3378800E034D4 /* AppDelegate.m */; };
 		DE77478F1ED3378800E034D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77478E1ED3378800E034D4 /* ViewController.m */; };
@@ -14,67 +56,84 @@
 		DE7747951ED3378800E034D4 /* WQFunctionDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE7747931ED3378800E034D4 /* WQFunctionDemo.xcdatamodeld */; };
 		DE7747971ED3378800E034D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7747961ED3378800E034D4 /* Assets.xcassets */; };
 		DE77479A1ED3378800E034D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7747981ED3378800E034D4 /* LaunchScreen.storyboard */; };
-		DE7748241ED33B3100E034D4 /* ZHAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747A51ED33B3100E034D4 /* ZHAnimationView.m */; };
-		DE7748251ED33B3100E034D4 /* WQCommonArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747A91ED33B3100E034D4 /* WQCommonArrowItem.m */; };
-		DE7748261ED33B3100E034D4 /* WQCommonBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747AB1ED33B3100E034D4 /* WQCommonBaseItem.m */; };
-		DE7748271ED33B3100E034D4 /* WQCommonCenterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747AD1ED33B3100E034D4 /* WQCommonCenterItem.m */; };
-		DE7748281ED33B3100E034D4 /* WQCommonCustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747AF1ED33B3100E034D4 /* WQCommonCustomItem.m */; };
-		DE7748291ED33B3100E034D4 /* WQCommonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747B11ED33B3100E034D4 /* WQCommonGroup.m */; };
-		DE77482A1ED33B3100E034D4 /* WQCommonSubtitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747B31ED33B3100E034D4 /* WQCommonSubtitleItem.m */; };
-		DE77482B1ED33B3100E034D4 /* WQCommonSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747B51ED33B3100E034D4 /* WQCommonSwitchItem.m */; };
-		DE77482C1ED33B3100E034D4 /* WQCommonBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747B81ED33B3100E034D4 /* WQCommonBaseCell.m */; };
-		DE77482D1ED33B3100E034D4 /* WQCommonBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747BB1ED33B3100E034D4 /* WQCommonBaseTableController.m */; };
-		DE77482E1ED33B3100E034D4 /* WQCommonDataResource.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747BF1ED33B3100E034D4 /* WQCommonDataResource.m */; };
-		DE77482F1ED33B3100E034D4 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7747C21ED33B3100E034D4 /* Resources.xcassets */; };
-		DE7748301ED33B3100E034D4 /* 00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE7747C41ED33B3100E034D4 /* 00.jpg */; };
-		DE7748311ED33B3100E034D4 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE7747C51ED33B3100E034D4 /* 01.jpg */; };
-		DE7748321ED33B3100E034D4 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE7747C61ED33B3100E034D4 /* 02.jpg */; };
-		DE7748331ED33B3100E034D4 /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE7747C71ED33B3100E034D4 /* 03.jpg */; };
-		DE7748341ED33B3100E034D4 /* 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE7747C81ED33B3100E034D4 /* 04.jpg */; };
-		DE7748351ED33B3100E034D4 /* 05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE7747C91ED33B3100E034D4 /* 05.jpg */; };
-		DE7748361ED33B3100E034D4 /* 06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE7747CA1ED33B3100E034D4 /* 06.jpg */; };
-		DE7748371ED33B3100E034D4 /* 07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE7747CB1ED33B3100E034D4 /* 07.jpg */; };
-		DE7748381ED33B3100E034D4 /* TabbbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7747CD1ED33B3100E034D4 /* TabbbarController.storyboard */; };
-		DE7748391ED33B3100E034D4 /* WQAlertCenterOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747D21ED33B3100E034D4 /* WQAlertCenterOptionsView.m */; };
-		DE77483A1ED33B3100E034D4 /* WQAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747D41ED33B3100E034D4 /* WQAlertController.m */; };
-		DE77483B1ED33B3100E034D4 /* WQCommonAlertBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747D71ED33B3100E034D4 /* WQCommonAlertBottomView.m */; };
-		DE77483C1ED33B3100E034D4 /* WQCommonAlertTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747D91ED33B3100E034D4 /* WQCommonAlertTitleView.m */; };
-		DE77483D1ED33B3100E034D4 /* WQSelectDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747DB1ED33B3100E034D4 /* WQSelectDateController.m */; };
-		DE77483E1ED33B3100E034D4 /* WQBannerLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747DE1ED33B3100E034D4 /* WQBannerLoopView.m */; };
-		DE77483F1ED33B3100E034D4 /* WQClendarDayUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747E11ED33B3100E034D4 /* WQClendarDayUnit.m */; };
-		DE7748401ED33B3100E034D4 /* WQClendarUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747E31ED33B3100E034D4 /* WQClendarUnit.m */; };
-		DE7748411ED33B3100E034D4 /* WQClendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747E51ED33B3100E034D4 /* WQClendarView.m */; };
-		DE7748421ED33B3100E034D4 /* ExamineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747E81ED33B3100E034D4 /* ExamineCell.m */; };
-		DE7748431ED33B3100E034D4 /* ExamineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7747E91ED33B3100E034D4 /* ExamineCell.xib */; };
-		DE7748441ED33B3100E034D4 /* GuDExaminationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747EB1ED33B3100E034D4 /* GuDExaminationItem.m */; };
-		DE7748451ED33B3100E034D4 /* GuDExamineDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747ED1ED33B3100E034D4 /* GuDExamineDataViewController.m */; };
-		DE7748461ED33B3100E034D4 /* GuDExamineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747EF1ED33B3100E034D4 /* GuDExamineViewController.m */; };
-		DE7748471ED33B3100E034D4 /* WQTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747F21ED33B3100E034D4 /* WQTagCollectionViewCell.m */; };
-		DE7748481ED33B3100E034D4 /* WQTagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7747F31ED33B3100E034D4 /* WQTagCollectionViewCell.xib */; };
-		DE7748491ED33B3100E034D4 /* WQTagsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747F51ED33B3100E034D4 /* WQTagsFlowLayout.m */; };
-		DE77484A1ED33B3100E034D4 /* WQAPPHELP.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747F81ED33B3100E034D4 /* WQAPPHELP.m */; };
-		DE77484B1ED33B3100E034D4 /* WQBroserController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747FA1ED33B3100E034D4 /* WQBroserController.m */; };
-		DE77484C1ED33B3100E034D4 /* WQBroserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7747FB1ED33B3100E034D4 /* WQBroserController.xib */; };
-		DE77484D1ED33B3100E034D4 /* WQControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747FD1ED33B3100E034D4 /* WQControllerTransition.m */; };
-		DE77484E1ED33B3100E034D4 /* WQPopoverPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747FF1ED33B3100E034D4 /* WQPopoverPresentationController.m */; };
-		DE77484F1ED33B3100E034D4 /* WQPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7748011ED33B3100E034D4 /* WQPresentationController.m */; };
-		DE7748511ED33B3100E034D4 /* WQSelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7748061ED33B3100E034D4 /* WQSelectPhotoViewController.m */; };
-		DE7748521ED33B3100E034D4 /* WQActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7748091ED33B3100E034D4 /* WQActionSheetCell.m */; };
-		DE7748531ED33B3100E034D4 /* WQActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77480B1ED33B3100E034D4 /* WQActionSheetController.m */; };
-		DE7748541ED33B3100E034D4 /* WQSelecOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77480D1ED33B3100E034D4 /* WQSelecOptionsView.m */; };
-		DE7748551ED33B3100E034D4 /* WQSelectOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77480F1ED33B3100E034D4 /* WQSelectOptionsCell.m */; };
-		DE7748561ED33B3100E034D4 /* WQShareActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7748121ED33B3100E034D4 /* WQShareActionCell.m */; };
-		DE7748571ED33B3100E034D4 /* WQShareActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7748131ED33B3100E034D4 /* WQShareActionCell.xib */; };
-		DE7748581ED33B3100E034D4 /* WQShareActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7748151ED33B3100E034D4 /* WQShareActionItem.m */; };
-		DE7748591ED33B3100E034D4 /* WQShareActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7748171ED33B3100E034D4 /* WQShareActionViewController.m */; };
-		DE77485A1ED33B3100E034D4 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77481A1ED33B3100E034D4 /* MainNavController.m */; };
-		DE77485B1ED33B3100E034D4 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77481C1ED33B3100E034D4 /* MainTabBarController.m */; };
-		DE77485C1ED33B3100E034D4 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77481E1ED33B3100E034D4 /* MenuViewController.m */; };
-		DE77485D1ED33B3100E034D4 /* WQContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7748201ED33B3100E034D4 /* WQContainerViewController.m */; };
-		DE77485E1ED33B3100E034D4 /* GYChangeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7748231ED33B3100E034D4 /* GYChangeTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		278DBFC22EFA8038731DCCCF /* Pods-WQFunctionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQFunctionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WQFunctionDemo/Pods-WQFunctionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BE2F726620D15847753C45A2 /* libPods-WQFunctionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WQFunctionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE218D7DDDC8DB52F74AD572 /* Pods-WQFunctionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQFunctionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WQFunctionDemo/Pods-WQFunctionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DE52C9EA1ED8071600FDE643 /* WQAlertBottomViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQAlertBottomViewProtocol.h; sourceTree = "<group>"; };
+		DE52C9EB1ED8071600FDE643 /* WQAlertCenterOptionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQAlertCenterOptionsView.h; sourceTree = "<group>"; };
+		DE52C9EC1ED8071600FDE643 /* WQAlertCenterOptionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQAlertCenterOptionsView.m; sourceTree = "<group>"; };
+		DE52C9ED1ED8071600FDE643 /* WQAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQAlertController.h; sourceTree = "<group>"; };
+		DE52C9EE1ED8071600FDE643 /* WQAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQAlertController.m; sourceTree = "<group>"; };
+		DE52C9EF1ED8071600FDE643 /* WQAlertTitleViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQAlertTitleViewProtocol.h; sourceTree = "<group>"; };
+		DE52C9F01ED8071600FDE643 /* WQCommonAlertBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonAlertBottomView.h; sourceTree = "<group>"; };
+		DE52C9F11ED8071600FDE643 /* WQCommonAlertBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonAlertBottomView.m; sourceTree = "<group>"; };
+		DE52C9F21ED8071600FDE643 /* WQCommonAlertTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonAlertTitleView.h; sourceTree = "<group>"; };
+		DE52C9F31ED8071600FDE643 /* WQCommonAlertTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonAlertTitleView.m; sourceTree = "<group>"; };
+		DE52C9F41ED8071600FDE643 /* WQSelectDateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSelectDateController.h; sourceTree = "<group>"; };
+		DE52C9F51ED8071600FDE643 /* WQSelectDateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSelectDateController.m; sourceTree = "<group>"; };
+		DE52C9F71ED8071600FDE643 /* WQBannerLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQBannerLoopView.h; sourceTree = "<group>"; };
+		DE52C9F81ED8071600FDE643 /* WQBannerLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQBannerLoopView.m; sourceTree = "<group>"; };
+		DE52C9FA1ED8071600FDE643 /* WQClendarDayUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQClendarDayUnit.h; sourceTree = "<group>"; };
+		DE52C9FB1ED8071600FDE643 /* WQClendarDayUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQClendarDayUnit.m; sourceTree = "<group>"; };
+		DE52C9FC1ED8071600FDE643 /* WQClendarUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQClendarUnit.h; sourceTree = "<group>"; };
+		DE52C9FD1ED8071600FDE643 /* WQClendarUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQClendarUnit.m; sourceTree = "<group>"; };
+		DE52C9FE1ED8071600FDE643 /* WQClendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQClendarView.h; sourceTree = "<group>"; };
+		DE52C9FF1ED8071600FDE643 /* WQClendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQClendarView.m; sourceTree = "<group>"; };
+		DE52CA011ED8071600FDE643 /* ExamineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamineCell.h; sourceTree = "<group>"; };
+		DE52CA021ED8071600FDE643 /* ExamineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamineCell.m; sourceTree = "<group>"; };
+		DE52CA031ED8071600FDE643 /* ExamineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExamineCell.xib; sourceTree = "<group>"; };
+		DE52CA041ED8071600FDE643 /* GuDExaminationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuDExaminationItem.h; sourceTree = "<group>"; };
+		DE52CA051ED8071600FDE643 /* GuDExaminationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuDExaminationItem.m; sourceTree = "<group>"; };
+		DE52CA061ED8071600FDE643 /* GuDExamineDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuDExamineDataViewController.h; sourceTree = "<group>"; };
+		DE52CA071ED8071600FDE643 /* GuDExamineDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuDExamineDataViewController.m; sourceTree = "<group>"; };
+		DE52CA081ED8071600FDE643 /* GuDExamineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuDExamineViewController.h; sourceTree = "<group>"; };
+		DE52CA091ED8071600FDE643 /* GuDExamineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuDExamineViewController.m; sourceTree = "<group>"; };
+		DE52CA0B1ED8071600FDE643 /* WQTagCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQTagCollectionViewCell.h; sourceTree = "<group>"; };
+		DE52CA0C1ED8071600FDE643 /* WQTagCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQTagCollectionViewCell.m; sourceTree = "<group>"; };
+		DE52CA0D1ED8071600FDE643 /* WQTagCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WQTagCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE52CA0E1ED8071600FDE643 /* WQTagsFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQTagsFlowLayout.h; sourceTree = "<group>"; };
+		DE52CA0F1ED8071600FDE643 /* WQTagsFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQTagsFlowLayout.m; sourceTree = "<group>"; };
+		DE52CA111ED8071600FDE643 /* WQSelectPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSelectPhotoViewController.h; sourceTree = "<group>"; };
+		DE52CA121ED8071600FDE643 /* WQSelectPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSelectPhotoViewController.m; sourceTree = "<group>"; };
+		DE52CA141ED8071600FDE643 /* WQActionSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQActionSheetCell.h; sourceTree = "<group>"; };
+		DE52CA151ED8071600FDE643 /* WQActionSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQActionSheetCell.m; sourceTree = "<group>"; };
+		DE52CA161ED8071600FDE643 /* WQActionSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQActionSheetController.h; sourceTree = "<group>"; };
+		DE52CA171ED8071600FDE643 /* WQActionSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQActionSheetController.m; sourceTree = "<group>"; };
+		DE52CA181ED8071600FDE643 /* WQSelecOptionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSelecOptionsView.h; sourceTree = "<group>"; };
+		DE52CA191ED8071600FDE643 /* WQSelecOptionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSelecOptionsView.m; sourceTree = "<group>"; };
+		DE52CA1A1ED8071600FDE643 /* WQSelectOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSelectOptionsCell.h; sourceTree = "<group>"; };
+		DE52CA1B1ED8071600FDE643 /* WQSelectOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSelectOptionsCell.m; sourceTree = "<group>"; };
+		DE52CA1E1ED8071600FDE643 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		DE52CA201ED8071600FDE643 /* 00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 00.jpg; sourceTree = "<group>"; };
+		DE52CA211ED8071600FDE643 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		DE52CA221ED8071600FDE643 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		DE52CA231ED8071600FDE643 /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
+		DE52CA241ED8071600FDE643 /* 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04.jpg; sourceTree = "<group>"; };
+		DE52CA251ED8071600FDE643 /* 05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 05.jpg; sourceTree = "<group>"; };
+		DE52CA261ED8071600FDE643 /* 06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 06.jpg; sourceTree = "<group>"; };
+		DE52CA271ED8071600FDE643 /* 07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 07.jpg; sourceTree = "<group>"; };
+		DE52CA291ED8071600FDE643 /* TabbbarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabbbarController.storyboard; sourceTree = "<group>"; };
+		DE52CA2B1ED8071600FDE643 /* WQShareActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQShareActionCell.h; sourceTree = "<group>"; };
+		DE52CA2C1ED8071600FDE643 /* WQShareActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQShareActionCell.m; sourceTree = "<group>"; };
+		DE52CA2D1ED8071600FDE643 /* WQShareActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WQShareActionCell.xib; sourceTree = "<group>"; };
+		DE52CA2E1ED8071600FDE643 /* WQShareActionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQShareActionItem.h; sourceTree = "<group>"; };
+		DE52CA2F1ED8071600FDE643 /* WQShareActionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQShareActionItem.m; sourceTree = "<group>"; };
+		DE52CA301ED8071600FDE643 /* WQShareActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQShareActionViewController.h; sourceTree = "<group>"; };
+		DE52CA311ED8071600FDE643 /* WQShareActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQShareActionViewController.m; sourceTree = "<group>"; };
+		DE52CA331ED8071600FDE643 /* MainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavController.h; sourceTree = "<group>"; };
+		DE52CA341ED8071600FDE643 /* MainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavController.m; sourceTree = "<group>"; };
+		DE52CA351ED8071600FDE643 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		DE52CA361ED8071600FDE643 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		DE52CA371ED8071600FDE643 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		DE52CA381ED8071600FDE643 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		DE52CA391ED8071600FDE643 /* WQContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQContainerViewController.h; sourceTree = "<group>"; };
+		DE52CA3A1ED8071600FDE643 /* WQContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQContainerViewController.m; sourceTree = "<group>"; };
+		DE52CA3C1ED8071600FDE643 /* GYChangeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYChangeTextView.h; sourceTree = "<group>"; };
+		DE52CA3D1ED8071600FDE643 /* GYChangeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYChangeTextView.m; sourceTree = "<group>"; };
+		DE52CA671ED80BD400FDE643 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DE7747841ED3378800E034D4 /* WQFunctionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WQFunctionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7747881ED3378800E034D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE77478A1ED3378800E034D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,111 +145,6 @@
 		DE7747961ED3378800E034D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE7747991ED3378800E034D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE77479B1ED3378800E034D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE7747A41ED33B3100E034D4 /* ZHAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHAnimationView.h; sourceTree = "<group>"; };
-		DE7747A51ED33B3100E034D4 /* ZHAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHAnimationView.m; sourceTree = "<group>"; };
-		DE7747A81ED33B3100E034D4 /* WQCommonArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonArrowItem.h; sourceTree = "<group>"; };
-		DE7747A91ED33B3100E034D4 /* WQCommonArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonArrowItem.m; sourceTree = "<group>"; };
-		DE7747AA1ED33B3100E034D4 /* WQCommonBaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonBaseItem.h; sourceTree = "<group>"; };
-		DE7747AB1ED33B3100E034D4 /* WQCommonBaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonBaseItem.m; sourceTree = "<group>"; };
-		DE7747AC1ED33B3100E034D4 /* WQCommonCenterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonCenterItem.h; sourceTree = "<group>"; };
-		DE7747AD1ED33B3100E034D4 /* WQCommonCenterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonCenterItem.m; sourceTree = "<group>"; };
-		DE7747AE1ED33B3100E034D4 /* WQCommonCustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonCustomItem.h; sourceTree = "<group>"; };
-		DE7747AF1ED33B3100E034D4 /* WQCommonCustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonCustomItem.m; sourceTree = "<group>"; };
-		DE7747B01ED33B3100E034D4 /* WQCommonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonGroup.h; sourceTree = "<group>"; };
-		DE7747B11ED33B3100E034D4 /* WQCommonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonGroup.m; sourceTree = "<group>"; };
-		DE7747B21ED33B3100E034D4 /* WQCommonSubtitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonSubtitleItem.h; sourceTree = "<group>"; };
-		DE7747B31ED33B3100E034D4 /* WQCommonSubtitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonSubtitleItem.m; sourceTree = "<group>"; };
-		DE7747B41ED33B3100E034D4 /* WQCommonSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonSwitchItem.h; sourceTree = "<group>"; };
-		DE7747B51ED33B3100E034D4 /* WQCommonSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonSwitchItem.m; sourceTree = "<group>"; };
-		DE7747B71ED33B3100E034D4 /* WQCommonBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonBaseCell.h; sourceTree = "<group>"; };
-		DE7747B81ED33B3100E034D4 /* WQCommonBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonBaseCell.m; sourceTree = "<group>"; };
-		DE7747BA1ED33B3100E034D4 /* WQCommonBaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonBaseTableController.h; sourceTree = "<group>"; };
-		DE7747BB1ED33B3100E034D4 /* WQCommonBaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonBaseTableController.m; sourceTree = "<group>"; };
-		DE7747BD1ED33B3100E034D4 /* WQCommonCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonCellProtocol.h; sourceTree = "<group>"; };
-		DE7747BE1ED33B3100E034D4 /* WQCommonDataResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonDataResource.h; sourceTree = "<group>"; };
-		DE7747BF1ED33B3100E034D4 /* WQCommonDataResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonDataResource.m; sourceTree = "<group>"; };
-		DE7747C21ED33B3100E034D4 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
-		DE7747C41ED33B3100E034D4 /* 00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 00.jpg; sourceTree = "<group>"; };
-		DE7747C51ED33B3100E034D4 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
-		DE7747C61ED33B3100E034D4 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
-		DE7747C71ED33B3100E034D4 /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
-		DE7747C81ED33B3100E034D4 /* 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04.jpg; sourceTree = "<group>"; };
-		DE7747C91ED33B3100E034D4 /* 05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 05.jpg; sourceTree = "<group>"; };
-		DE7747CA1ED33B3100E034D4 /* 06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 06.jpg; sourceTree = "<group>"; };
-		DE7747CB1ED33B3100E034D4 /* 07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 07.jpg; sourceTree = "<group>"; };
-		DE7747CD1ED33B3100E034D4 /* TabbbarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabbbarController.storyboard; sourceTree = "<group>"; };
-		DE7747D01ED33B3100E034D4 /* WQAlertBottomViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQAlertBottomViewProtocol.h; sourceTree = "<group>"; };
-		DE7747D11ED33B3100E034D4 /* WQAlertCenterOptionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQAlertCenterOptionsView.h; sourceTree = "<group>"; };
-		DE7747D21ED33B3100E034D4 /* WQAlertCenterOptionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQAlertCenterOptionsView.m; sourceTree = "<group>"; };
-		DE7747D31ED33B3100E034D4 /* WQAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQAlertController.h; sourceTree = "<group>"; };
-		DE7747D41ED33B3100E034D4 /* WQAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQAlertController.m; sourceTree = "<group>"; };
-		DE7747D51ED33B3100E034D4 /* WQAlertTitleViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQAlertTitleViewProtocol.h; sourceTree = "<group>"; };
-		DE7747D61ED33B3100E034D4 /* WQCommonAlertBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonAlertBottomView.h; sourceTree = "<group>"; };
-		DE7747D71ED33B3100E034D4 /* WQCommonAlertBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonAlertBottomView.m; sourceTree = "<group>"; };
-		DE7747D81ED33B3100E034D4 /* WQCommonAlertTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCommonAlertTitleView.h; sourceTree = "<group>"; };
-		DE7747D91ED33B3100E034D4 /* WQCommonAlertTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCommonAlertTitleView.m; sourceTree = "<group>"; };
-		DE7747DA1ED33B3100E034D4 /* WQSelectDateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSelectDateController.h; sourceTree = "<group>"; };
-		DE7747DB1ED33B3100E034D4 /* WQSelectDateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSelectDateController.m; sourceTree = "<group>"; };
-		DE7747DD1ED33B3100E034D4 /* WQBannerLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQBannerLoopView.h; sourceTree = "<group>"; };
-		DE7747DE1ED33B3100E034D4 /* WQBannerLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQBannerLoopView.m; sourceTree = "<group>"; };
-		DE7747E01ED33B3100E034D4 /* WQClendarDayUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQClendarDayUnit.h; sourceTree = "<group>"; };
-		DE7747E11ED33B3100E034D4 /* WQClendarDayUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQClendarDayUnit.m; sourceTree = "<group>"; };
-		DE7747E21ED33B3100E034D4 /* WQClendarUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQClendarUnit.h; sourceTree = "<group>"; };
-		DE7747E31ED33B3100E034D4 /* WQClendarUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQClendarUnit.m; sourceTree = "<group>"; };
-		DE7747E41ED33B3100E034D4 /* WQClendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQClendarView.h; sourceTree = "<group>"; };
-		DE7747E51ED33B3100E034D4 /* WQClendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQClendarView.m; sourceTree = "<group>"; };
-		DE7747E71ED33B3100E034D4 /* ExamineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamineCell.h; sourceTree = "<group>"; };
-		DE7747E81ED33B3100E034D4 /* ExamineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamineCell.m; sourceTree = "<group>"; };
-		DE7747E91ED33B3100E034D4 /* ExamineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExamineCell.xib; sourceTree = "<group>"; };
-		DE7747EA1ED33B3100E034D4 /* GuDExaminationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuDExaminationItem.h; sourceTree = "<group>"; };
-		DE7747EB1ED33B3100E034D4 /* GuDExaminationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuDExaminationItem.m; sourceTree = "<group>"; };
-		DE7747EC1ED33B3100E034D4 /* GuDExamineDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuDExamineDataViewController.h; sourceTree = "<group>"; };
-		DE7747ED1ED33B3100E034D4 /* GuDExamineDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuDExamineDataViewController.m; sourceTree = "<group>"; };
-		DE7747EE1ED33B3100E034D4 /* GuDExamineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuDExamineViewController.h; sourceTree = "<group>"; };
-		DE7747EF1ED33B3100E034D4 /* GuDExamineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuDExamineViewController.m; sourceTree = "<group>"; };
-		DE7747F11ED33B3100E034D4 /* WQTagCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQTagCollectionViewCell.h; sourceTree = "<group>"; };
-		DE7747F21ED33B3100E034D4 /* WQTagCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQTagCollectionViewCell.m; sourceTree = "<group>"; };
-		DE7747F31ED33B3100E034D4 /* WQTagCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WQTagCollectionViewCell.xib; sourceTree = "<group>"; };
-		DE7747F41ED33B3100E034D4 /* WQTagsFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQTagsFlowLayout.h; sourceTree = "<group>"; };
-		DE7747F51ED33B3100E034D4 /* WQTagsFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQTagsFlowLayout.m; sourceTree = "<group>"; };
-		DE7747F71ED33B3100E034D4 /* WQAPPHELP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQAPPHELP.h; sourceTree = "<group>"; };
-		DE7747F81ED33B3100E034D4 /* WQAPPHELP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQAPPHELP.m; sourceTree = "<group>"; };
-		DE7747F91ED33B3100E034D4 /* WQBroserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQBroserController.h; sourceTree = "<group>"; };
-		DE7747FA1ED33B3100E034D4 /* WQBroserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQBroserController.m; sourceTree = "<group>"; };
-		DE7747FB1ED33B3100E034D4 /* WQBroserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WQBroserController.xib; sourceTree = "<group>"; };
-		DE7747FC1ED33B3100E034D4 /* WQControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQControllerTransition.h; sourceTree = "<group>"; };
-		DE7747FD1ED33B3100E034D4 /* WQControllerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQControllerTransition.m; sourceTree = "<group>"; };
-		DE7747FE1ED33B3100E034D4 /* WQPopoverPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQPopoverPresentationController.h; sourceTree = "<group>"; };
-		DE7747FF1ED33B3100E034D4 /* WQPopoverPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQPopoverPresentationController.m; sourceTree = "<group>"; };
-		DE7748001ED33B3100E034D4 /* WQPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQPresentationController.h; sourceTree = "<group>"; };
-		DE7748011ED33B3100E034D4 /* WQPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQPresentationController.m; sourceTree = "<group>"; };
-		DE7748051ED33B3100E034D4 /* WQSelectPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSelectPhotoViewController.h; sourceTree = "<group>"; };
-		DE7748061ED33B3100E034D4 /* WQSelectPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSelectPhotoViewController.m; sourceTree = "<group>"; };
-		DE7748081ED33B3100E034D4 /* WQActionSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQActionSheetCell.h; sourceTree = "<group>"; };
-		DE7748091ED33B3100E034D4 /* WQActionSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQActionSheetCell.m; sourceTree = "<group>"; };
-		DE77480A1ED33B3100E034D4 /* WQActionSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQActionSheetController.h; sourceTree = "<group>"; };
-		DE77480B1ED33B3100E034D4 /* WQActionSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQActionSheetController.m; sourceTree = "<group>"; };
-		DE77480C1ED33B3100E034D4 /* WQSelecOptionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSelecOptionsView.h; sourceTree = "<group>"; };
-		DE77480D1ED33B3100E034D4 /* WQSelecOptionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSelecOptionsView.m; sourceTree = "<group>"; };
-		DE77480E1ED33B3100E034D4 /* WQSelectOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSelectOptionsCell.h; sourceTree = "<group>"; };
-		DE77480F1ED33B3100E034D4 /* WQSelectOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQSelectOptionsCell.m; sourceTree = "<group>"; };
-		DE7748111ED33B3100E034D4 /* WQShareActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQShareActionCell.h; sourceTree = "<group>"; };
-		DE7748121ED33B3100E034D4 /* WQShareActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQShareActionCell.m; sourceTree = "<group>"; };
-		DE7748131ED33B3100E034D4 /* WQShareActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WQShareActionCell.xib; sourceTree = "<group>"; };
-		DE7748141ED33B3100E034D4 /* WQShareActionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQShareActionItem.h; sourceTree = "<group>"; };
-		DE7748151ED33B3100E034D4 /* WQShareActionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQShareActionItem.m; sourceTree = "<group>"; };
-		DE7748161ED33B3100E034D4 /* WQShareActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQShareActionViewController.h; sourceTree = "<group>"; };
-		DE7748171ED33B3100E034D4 /* WQShareActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQShareActionViewController.m; sourceTree = "<group>"; };
-		DE7748191ED33B3100E034D4 /* MainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavController.h; sourceTree = "<group>"; };
-		DE77481A1ED33B3100E034D4 /* MainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavController.m; sourceTree = "<group>"; };
-		DE77481B1ED33B3100E034D4 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
-		DE77481C1ED33B3100E034D4 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
-		DE77481D1ED33B3100E034D4 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		DE77481E1ED33B3100E034D4 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		DE77481F1ED33B3100E034D4 /* WQContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQContainerViewController.h; sourceTree = "<group>"; };
-		DE7748201ED33B3100E034D4 /* WQContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQContainerViewController.m; sourceTree = "<group>"; };
-		DE7748221ED33B3100E034D4 /* GYChangeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYChangeTextView.h; sourceTree = "<group>"; };
-		DE7748231ED33B3100E034D4 /* GYChangeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYChangeTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,18 +152,228 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229B5D748F7A88A9B8DC71E4 /* libPods-WQFunctionDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82A6FD109728D5475B32DAC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				278DBFC22EFA8038731DCCCF /* Pods-WQFunctionDemo.debug.xcconfig */,
+				CE218D7DDDC8DB52F74AD572 /* Pods-WQFunctionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE098AF309A20CFD6F6C4B31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE2F726620D15847753C45A2 /* libPods-WQFunctionDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE52C9E81ED8071600FDE643 /* WQFunctionCommponents */ = {
+			isa = PBXGroup;
+			children = (
+				DE52C9E91ED8071600FDE643 /* WQAlertUI */,
+				DE52C9F61ED8071600FDE643 /* WQBannerLoop */,
+				DE52C9F91ED8071600FDE643 /* WQClendarUI */,
+				DE52CA001ED8071600FDE643 /* WQExamineUI */,
+				DE52CA0A1ED8071600FDE643 /* WQFlowTagUI */,
+				DE52CA101ED8071600FDE643 /* WQPhotoUI */,
+				DE52CA131ED8071600FDE643 /* WQPopSelectionsUI */,
+				DE52CA1C1ED8071600FDE643 /* WQResources */,
+				DE52CA2A1ED8071600FDE643 /* WQShareUI */,
+				DE52CA321ED8071600FDE643 /* WQSlideMenu */,
+				DE52CA3B1ED8071600FDE643 /* WQVerticalLoopText */,
+			);
+			path = WQFunctionCommponents;
+			sourceTree = "<group>";
+		};
+		DE52C9E91ED8071600FDE643 /* WQAlertUI */ = {
+			isa = PBXGroup;
+			children = (
+				DE52C9EA1ED8071600FDE643 /* WQAlertBottomViewProtocol.h */,
+				DE52C9EB1ED8071600FDE643 /* WQAlertCenterOptionsView.h */,
+				DE52C9EC1ED8071600FDE643 /* WQAlertCenterOptionsView.m */,
+				DE52C9ED1ED8071600FDE643 /* WQAlertController.h */,
+				DE52C9EE1ED8071600FDE643 /* WQAlertController.m */,
+				DE52C9EF1ED8071600FDE643 /* WQAlertTitleViewProtocol.h */,
+				DE52C9F01ED8071600FDE643 /* WQCommonAlertBottomView.h */,
+				DE52C9F11ED8071600FDE643 /* WQCommonAlertBottomView.m */,
+				DE52C9F21ED8071600FDE643 /* WQCommonAlertTitleView.h */,
+				DE52C9F31ED8071600FDE643 /* WQCommonAlertTitleView.m */,
+				DE52C9F41ED8071600FDE643 /* WQSelectDateController.h */,
+				DE52C9F51ED8071600FDE643 /* WQSelectDateController.m */,
+			);
+			path = WQAlertUI;
+			sourceTree = "<group>";
+		};
+		DE52C9F61ED8071600FDE643 /* WQBannerLoop */ = {
+			isa = PBXGroup;
+			children = (
+				DE52C9F71ED8071600FDE643 /* WQBannerLoopView.h */,
+				DE52C9F81ED8071600FDE643 /* WQBannerLoopView.m */,
+			);
+			path = WQBannerLoop;
+			sourceTree = "<group>";
+		};
+		DE52C9F91ED8071600FDE643 /* WQClendarUI */ = {
+			isa = PBXGroup;
+			children = (
+				DE52C9FA1ED8071600FDE643 /* WQClendarDayUnit.h */,
+				DE52C9FB1ED8071600FDE643 /* WQClendarDayUnit.m */,
+				DE52C9FC1ED8071600FDE643 /* WQClendarUnit.h */,
+				DE52C9FD1ED8071600FDE643 /* WQClendarUnit.m */,
+				DE52C9FE1ED8071600FDE643 /* WQClendarView.h */,
+				DE52C9FF1ED8071600FDE643 /* WQClendarView.m */,
+			);
+			path = WQClendarUI;
+			sourceTree = "<group>";
+		};
+		DE52CA001ED8071600FDE643 /* WQExamineUI */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA011ED8071600FDE643 /* ExamineCell.h */,
+				DE52CA021ED8071600FDE643 /* ExamineCell.m */,
+				DE52CA031ED8071600FDE643 /* ExamineCell.xib */,
+				DE52CA041ED8071600FDE643 /* GuDExaminationItem.h */,
+				DE52CA051ED8071600FDE643 /* GuDExaminationItem.m */,
+				DE52CA061ED8071600FDE643 /* GuDExamineDataViewController.h */,
+				DE52CA071ED8071600FDE643 /* GuDExamineDataViewController.m */,
+				DE52CA081ED8071600FDE643 /* GuDExamineViewController.h */,
+				DE52CA091ED8071600FDE643 /* GuDExamineViewController.m */,
+			);
+			path = WQExamineUI;
+			sourceTree = "<group>";
+		};
+		DE52CA0A1ED8071600FDE643 /* WQFlowTagUI */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA0B1ED8071600FDE643 /* WQTagCollectionViewCell.h */,
+				DE52CA0C1ED8071600FDE643 /* WQTagCollectionViewCell.m */,
+				DE52CA0D1ED8071600FDE643 /* WQTagCollectionViewCell.xib */,
+				DE52CA0E1ED8071600FDE643 /* WQTagsFlowLayout.h */,
+				DE52CA0F1ED8071600FDE643 /* WQTagsFlowLayout.m */,
+			);
+			path = WQFlowTagUI;
+			sourceTree = "<group>";
+		};
+		DE52CA101ED8071600FDE643 /* WQPhotoUI */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA111ED8071600FDE643 /* WQSelectPhotoViewController.h */,
+				DE52CA121ED8071600FDE643 /* WQSelectPhotoViewController.m */,
+			);
+			path = WQPhotoUI;
+			sourceTree = "<group>";
+		};
+		DE52CA131ED8071600FDE643 /* WQPopSelectionsUI */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA141ED8071600FDE643 /* WQActionSheetCell.h */,
+				DE52CA151ED8071600FDE643 /* WQActionSheetCell.m */,
+				DE52CA161ED8071600FDE643 /* WQActionSheetController.h */,
+				DE52CA171ED8071600FDE643 /* WQActionSheetController.m */,
+				DE52CA181ED8071600FDE643 /* WQSelecOptionsView.h */,
+				DE52CA191ED8071600FDE643 /* WQSelecOptionsView.m */,
+				DE52CA1A1ED8071600FDE643 /* WQSelectOptionsCell.h */,
+				DE52CA1B1ED8071600FDE643 /* WQSelectOptionsCell.m */,
+			);
+			path = WQPopSelectionsUI;
+			sourceTree = "<group>";
+		};
+		DE52CA1C1ED8071600FDE643 /* WQResources */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA1D1ED8071600FDE643 /* Assets */,
+				DE52CA1F1ED8071600FDE643 /* images */,
+				DE52CA281ED8071600FDE643 /* Sb */,
+			);
+			path = WQResources;
+			sourceTree = "<group>";
+		};
+		DE52CA1D1ED8071600FDE643 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA1E1ED8071600FDE643 /* Resources.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DE52CA1F1ED8071600FDE643 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA201ED8071600FDE643 /* 00.jpg */,
+				DE52CA211ED8071600FDE643 /* 01.jpg */,
+				DE52CA221ED8071600FDE643 /* 02.jpg */,
+				DE52CA231ED8071600FDE643 /* 03.jpg */,
+				DE52CA241ED8071600FDE643 /* 04.jpg */,
+				DE52CA251ED8071600FDE643 /* 05.jpg */,
+				DE52CA261ED8071600FDE643 /* 06.jpg */,
+				DE52CA271ED8071600FDE643 /* 07.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		DE52CA281ED8071600FDE643 /* Sb */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA291ED8071600FDE643 /* TabbbarController.storyboard */,
+			);
+			path = Sb;
+			sourceTree = "<group>";
+		};
+		DE52CA2A1ED8071600FDE643 /* WQShareUI */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA2B1ED8071600FDE643 /* WQShareActionCell.h */,
+				DE52CA2C1ED8071600FDE643 /* WQShareActionCell.m */,
+				DE52CA2D1ED8071600FDE643 /* WQShareActionCell.xib */,
+				DE52CA2E1ED8071600FDE643 /* WQShareActionItem.h */,
+				DE52CA2F1ED8071600FDE643 /* WQShareActionItem.m */,
+				DE52CA301ED8071600FDE643 /* WQShareActionViewController.h */,
+				DE52CA311ED8071600FDE643 /* WQShareActionViewController.m */,
+			);
+			path = WQShareUI;
+			sourceTree = "<group>";
+		};
+		DE52CA321ED8071600FDE643 /* WQSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA331ED8071600FDE643 /* MainNavController.h */,
+				DE52CA341ED8071600FDE643 /* MainNavController.m */,
+				DE52CA351ED8071600FDE643 /* MainTabBarController.h */,
+				DE52CA361ED8071600FDE643 /* MainTabBarController.m */,
+				DE52CA371ED8071600FDE643 /* MenuViewController.h */,
+				DE52CA381ED8071600FDE643 /* MenuViewController.m */,
+				DE52CA391ED8071600FDE643 /* WQContainerViewController.h */,
+				DE52CA3A1ED8071600FDE643 /* WQContainerViewController.m */,
+			);
+			path = WQSlideMenu;
+			sourceTree = "<group>";
+		};
+		DE52CA3B1ED8071600FDE643 /* WQVerticalLoopText */ = {
+			isa = PBXGroup;
+			children = (
+				DE52CA3C1ED8071600FDE643 /* GYChangeTextView.h */,
+				DE52CA3D1ED8071600FDE643 /* GYChangeTextView.m */,
+			);
+			path = WQVerticalLoopText;
+			sourceTree = "<group>";
+		};
 		DE77477B1ED3378800E034D4 = {
 			isa = PBXGroup;
 			children = (
-				DE7747A11ED33B3100E034D4 /* WQFunctionCommponents */,
+				DE52C9E81ED8071600FDE643 /* WQFunctionCommponents */,
 				DE7747861ED3378800E034D4 /* WQFunctionDemo */,
 				DE7747851ED3378800E034D4 /* Products */,
+				82A6FD109728D5475B32DAC0 /* Pods */,
+				DE098AF309A20CFD6F6C4B31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,304 +406,9 @@
 			isa = PBXGroup;
 			children = (
 				DE7747881ED3378800E034D4 /* main.m */,
+				DE52CA671ED80BD400FDE643 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DE7747A11ED33B3100E034D4 /* WQFunctionCommponents */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747A21ED33B3100E034D4 /* AnmationViews */,
-				DE7747A61ED33B3100E034D4 /* CommonTableView */,
-				DE7747C01ED33B3100E034D4 /* Resources */,
-				DE7747CE1ED33B3100E034D4 /* UIHelp */,
-			);
-			path = WQFunctionCommponents;
-			sourceTree = "<group>";
-		};
-		DE7747A21ED33B3100E034D4 /* AnmationViews */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747A31ED33B3100E034D4 /* Animation */,
-			);
-			path = AnmationViews;
-			sourceTree = "<group>";
-		};
-		DE7747A31ED33B3100E034D4 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747A41ED33B3100E034D4 /* ZHAnimationView.h */,
-				DE7747A51ED33B3100E034D4 /* ZHAnimationView.m */,
-			);
-			path = Animation;
-			sourceTree = "<group>";
-		};
-		DE7747A61ED33B3100E034D4 /* CommonTableView */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747A71ED33B3100E034D4 /* Model */,
-				DE7747B61ED33B3100E034D4 /* View */,
-				DE7747B91ED33B3100E034D4 /* ViewController */,
-				DE7747BC1ED33B3100E034D4 /* ViewModel */,
-			);
-			path = CommonTableView;
-			sourceTree = "<group>";
-		};
-		DE7747A71ED33B3100E034D4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747A81ED33B3100E034D4 /* WQCommonArrowItem.h */,
-				DE7747A91ED33B3100E034D4 /* WQCommonArrowItem.m */,
-				DE7747AA1ED33B3100E034D4 /* WQCommonBaseItem.h */,
-				DE7747AB1ED33B3100E034D4 /* WQCommonBaseItem.m */,
-				DE7747AC1ED33B3100E034D4 /* WQCommonCenterItem.h */,
-				DE7747AD1ED33B3100E034D4 /* WQCommonCenterItem.m */,
-				DE7747AE1ED33B3100E034D4 /* WQCommonCustomItem.h */,
-				DE7747AF1ED33B3100E034D4 /* WQCommonCustomItem.m */,
-				DE7747B01ED33B3100E034D4 /* WQCommonGroup.h */,
-				DE7747B11ED33B3100E034D4 /* WQCommonGroup.m */,
-				DE7747B21ED33B3100E034D4 /* WQCommonSubtitleItem.h */,
-				DE7747B31ED33B3100E034D4 /* WQCommonSubtitleItem.m */,
-				DE7747B41ED33B3100E034D4 /* WQCommonSwitchItem.h */,
-				DE7747B51ED33B3100E034D4 /* WQCommonSwitchItem.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DE7747B61ED33B3100E034D4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747B71ED33B3100E034D4 /* WQCommonBaseCell.h */,
-				DE7747B81ED33B3100E034D4 /* WQCommonBaseCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DE7747B91ED33B3100E034D4 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747BA1ED33B3100E034D4 /* WQCommonBaseTableController.h */,
-				DE7747BB1ED33B3100E034D4 /* WQCommonBaseTableController.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		DE7747BC1ED33B3100E034D4 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747BD1ED33B3100E034D4 /* WQCommonCellProtocol.h */,
-				DE7747BE1ED33B3100E034D4 /* WQCommonDataResource.h */,
-				DE7747BF1ED33B3100E034D4 /* WQCommonDataResource.m */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		DE7747C01ED33B3100E034D4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747C11ED33B3100E034D4 /* Assets */,
-				DE7747C31ED33B3100E034D4 /* images */,
-				DE7747CC1ED33B3100E034D4 /* Sb */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		DE7747C11ED33B3100E034D4 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747C21ED33B3100E034D4 /* Resources.xcassets */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		DE7747C31ED33B3100E034D4 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747C41ED33B3100E034D4 /* 00.jpg */,
-				DE7747C51ED33B3100E034D4 /* 01.jpg */,
-				DE7747C61ED33B3100E034D4 /* 02.jpg */,
-				DE7747C71ED33B3100E034D4 /* 03.jpg */,
-				DE7747C81ED33B3100E034D4 /* 04.jpg */,
-				DE7747C91ED33B3100E034D4 /* 05.jpg */,
-				DE7747CA1ED33B3100E034D4 /* 06.jpg */,
-				DE7747CB1ED33B3100E034D4 /* 07.jpg */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		DE7747CC1ED33B3100E034D4 /* Sb */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747CD1ED33B3100E034D4 /* TabbbarController.storyboard */,
-			);
-			path = Sb;
-			sourceTree = "<group>";
-		};
-		DE7747CE1ED33B3100E034D4 /* UIHelp */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747CF1ED33B3100E034D4 /* AlertUI */,
-				DE7747DC1ED33B3100E034D4 /* BannerLoop */,
-				DE7747DF1ED33B3100E034D4 /* ClendarUI */,
-				DE7747E61ED33B3100E034D4 /* ExamineUI */,
-				DE7747F01ED33B3100E034D4 /* FlowTagUI */,
-				DE7747F61ED33B3100E034D4 /* Help */,
-				DE7748021ED33B3100E034D4 /* PhotoUI */,
-				DE7748071ED33B3100E034D4 /* PopSelectionsUI */,
-				DE7748101ED33B3100E034D4 /* ShareUI */,
-				DE7748181ED33B3100E034D4 /* SlideMenu */,
-				DE7748211ED33B3100E034D4 /* VerticalLoopText */,
-			);
-			path = UIHelp;
-			sourceTree = "<group>";
-		};
-		DE7747CF1ED33B3100E034D4 /* AlertUI */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747D01ED33B3100E034D4 /* WQAlertBottomViewProtocol.h */,
-				DE7747D11ED33B3100E034D4 /* WQAlertCenterOptionsView.h */,
-				DE7747D21ED33B3100E034D4 /* WQAlertCenterOptionsView.m */,
-				DE7747D31ED33B3100E034D4 /* WQAlertController.h */,
-				DE7747D41ED33B3100E034D4 /* WQAlertController.m */,
-				DE7747D51ED33B3100E034D4 /* WQAlertTitleViewProtocol.h */,
-				DE7747D61ED33B3100E034D4 /* WQCommonAlertBottomView.h */,
-				DE7747D71ED33B3100E034D4 /* WQCommonAlertBottomView.m */,
-				DE7747D81ED33B3100E034D4 /* WQCommonAlertTitleView.h */,
-				DE7747D91ED33B3100E034D4 /* WQCommonAlertTitleView.m */,
-				DE7747DA1ED33B3100E034D4 /* WQSelectDateController.h */,
-				DE7747DB1ED33B3100E034D4 /* WQSelectDateController.m */,
-			);
-			path = AlertUI;
-			sourceTree = "<group>";
-		};
-		DE7747DC1ED33B3100E034D4 /* BannerLoop */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747DD1ED33B3100E034D4 /* WQBannerLoopView.h */,
-				DE7747DE1ED33B3100E034D4 /* WQBannerLoopView.m */,
-			);
-			path = BannerLoop;
-			sourceTree = "<group>";
-		};
-		DE7747DF1ED33B3100E034D4 /* ClendarUI */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747E01ED33B3100E034D4 /* WQClendarDayUnit.h */,
-				DE7747E11ED33B3100E034D4 /* WQClendarDayUnit.m */,
-				DE7747E21ED33B3100E034D4 /* WQClendarUnit.h */,
-				DE7747E31ED33B3100E034D4 /* WQClendarUnit.m */,
-				DE7747E41ED33B3100E034D4 /* WQClendarView.h */,
-				DE7747E51ED33B3100E034D4 /* WQClendarView.m */,
-			);
-			path = ClendarUI;
-			sourceTree = "<group>";
-		};
-		DE7747E61ED33B3100E034D4 /* ExamineUI */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747E71ED33B3100E034D4 /* ExamineCell.h */,
-				DE7747E81ED33B3100E034D4 /* ExamineCell.m */,
-				DE7747E91ED33B3100E034D4 /* ExamineCell.xib */,
-				DE7747EA1ED33B3100E034D4 /* GuDExaminationItem.h */,
-				DE7747EB1ED33B3100E034D4 /* GuDExaminationItem.m */,
-				DE7747EC1ED33B3100E034D4 /* GuDExamineDataViewController.h */,
-				DE7747ED1ED33B3100E034D4 /* GuDExamineDataViewController.m */,
-				DE7747EE1ED33B3100E034D4 /* GuDExamineViewController.h */,
-				DE7747EF1ED33B3100E034D4 /* GuDExamineViewController.m */,
-			);
-			path = ExamineUI;
-			sourceTree = "<group>";
-		};
-		DE7747F01ED33B3100E034D4 /* FlowTagUI */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747F11ED33B3100E034D4 /* WQTagCollectionViewCell.h */,
-				DE7747F21ED33B3100E034D4 /* WQTagCollectionViewCell.m */,
-				DE7747F31ED33B3100E034D4 /* WQTagCollectionViewCell.xib */,
-				DE7747F41ED33B3100E034D4 /* WQTagsFlowLayout.h */,
-				DE7747F51ED33B3100E034D4 /* WQTagsFlowLayout.m */,
-			);
-			path = FlowTagUI;
-			sourceTree = "<group>";
-		};
-		DE7747F61ED33B3100E034D4 /* Help */ = {
-			isa = PBXGroup;
-			children = (
-				DE7747F71ED33B3100E034D4 /* WQAPPHELP.h */,
-				DE7747F81ED33B3100E034D4 /* WQAPPHELP.m */,
-				DE7747F91ED33B3100E034D4 /* WQBroserController.h */,
-				DE7747FA1ED33B3100E034D4 /* WQBroserController.m */,
-				DE7747FB1ED33B3100E034D4 /* WQBroserController.xib */,
-				DE7747FC1ED33B3100E034D4 /* WQControllerTransition.h */,
-				DE7747FD1ED33B3100E034D4 /* WQControllerTransition.m */,
-				DE7747FE1ED33B3100E034D4 /* WQPopoverPresentationController.h */,
-				DE7747FF1ED33B3100E034D4 /* WQPopoverPresentationController.m */,
-				DE7748001ED33B3100E034D4 /* WQPresentationController.h */,
-				DE7748011ED33B3100E034D4 /* WQPresentationController.m */,
-			);
-			path = Help;
-			sourceTree = "<group>";
-		};
-		DE7748021ED33B3100E034D4 /* PhotoUI */ = {
-			isa = PBXGroup;
-			children = (
-				DE7748051ED33B3100E034D4 /* WQSelectPhotoViewController.h */,
-				DE7748061ED33B3100E034D4 /* WQSelectPhotoViewController.m */,
-			);
-			path = PhotoUI;
-			sourceTree = "<group>";
-		};
-		DE7748071ED33B3100E034D4 /* PopSelectionsUI */ = {
-			isa = PBXGroup;
-			children = (
-				DE7748081ED33B3100E034D4 /* WQActionSheetCell.h */,
-				DE7748091ED33B3100E034D4 /* WQActionSheetCell.m */,
-				DE77480A1ED33B3100E034D4 /* WQActionSheetController.h */,
-				DE77480B1ED33B3100E034D4 /* WQActionSheetController.m */,
-				DE77480C1ED33B3100E034D4 /* WQSelecOptionsView.h */,
-				DE77480D1ED33B3100E034D4 /* WQSelecOptionsView.m */,
-				DE77480E1ED33B3100E034D4 /* WQSelectOptionsCell.h */,
-				DE77480F1ED33B3100E034D4 /* WQSelectOptionsCell.m */,
-			);
-			path = PopSelectionsUI;
-			sourceTree = "<group>";
-		};
-		DE7748101ED33B3100E034D4 /* ShareUI */ = {
-			isa = PBXGroup;
-			children = (
-				DE7748111ED33B3100E034D4 /* WQShareActionCell.h */,
-				DE7748121ED33B3100E034D4 /* WQShareActionCell.m */,
-				DE7748131ED33B3100E034D4 /* WQShareActionCell.xib */,
-				DE7748141ED33B3100E034D4 /* WQShareActionItem.h */,
-				DE7748151ED33B3100E034D4 /* WQShareActionItem.m */,
-				DE7748161ED33B3100E034D4 /* WQShareActionViewController.h */,
-				DE7748171ED33B3100E034D4 /* WQShareActionViewController.m */,
-			);
-			path = ShareUI;
-			sourceTree = "<group>";
-		};
-		DE7748181ED33B3100E034D4 /* SlideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				DE7748191ED33B3100E034D4 /* MainNavController.h */,
-				DE77481A1ED33B3100E034D4 /* MainNavController.m */,
-				DE77481B1ED33B3100E034D4 /* MainTabBarController.h */,
-				DE77481C1ED33B3100E034D4 /* MainTabBarController.m */,
-				DE77481D1ED33B3100E034D4 /* MenuViewController.h */,
-				DE77481E1ED33B3100E034D4 /* MenuViewController.m */,
-				DE77481F1ED33B3100E034D4 /* WQContainerViewController.h */,
-				DE7748201ED33B3100E034D4 /* WQContainerViewController.m */,
-			);
-			path = SlideMenu;
-			sourceTree = "<group>";
-		};
-		DE7748211ED33B3100E034D4 /* VerticalLoopText */ = {
-			isa = PBXGroup;
-			children = (
-				DE7748221ED33B3100E034D4 /* GYChangeTextView.h */,
-				DE7748231ED33B3100E034D4 /* GYChangeTextView.m */,
-			);
-			path = VerticalLoopText;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -549,9 +418,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE77479E1ED3378800E034D4 /* Build configuration list for PBXNativeTarget "WQFunctionDemo" */;
 			buildPhases = (
+				D01E386AD432C82AE299758A /* [CP] Check Pods Manifest.lock */,
 				DE7747801ED3378800E034D4 /* Sources */,
 				DE7747811ED3378800E034D4 /* Frameworks */,
 				DE7747821ED3378800E034D4 /* Resources */,
+				A42AEDCA4C677D7731153DAF /* [CP] Embed Pods Frameworks */,
+				53937BB3223885E75577D22C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -600,81 +472,112 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE77484C1ED33B3100E034D4 /* WQBroserController.xib in Resources */,
-				DE7748481ED33B3100E034D4 /* WQTagCollectionViewCell.xib in Resources */,
-				DE7748351ED33B3100E034D4 /* 05.jpg in Resources */,
-				DE7748331ED33B3100E034D4 /* 03.jpg in Resources */,
-				DE7748301ED33B3100E034D4 /* 00.jpg in Resources */,
-				DE7748431ED33B3100E034D4 /* ExamineCell.xib in Resources */,
-				DE7748381ED33B3100E034D4 /* TabbbarController.storyboard in Resources */,
+				DE52CA5D1ED8071700FDE643 /* TabbbarController.storyboard in Resources */,
+				DE52CA5B1ED8071700FDE643 /* 06.jpg in Resources */,
+				DE52CA581ED8071700FDE643 /* 03.jpg in Resources */,
+				DE52CA5C1ED8071700FDE643 /* 07.jpg in Resources */,
+				DE52CA4D1ED8071700FDE643 /* WQTagCollectionViewCell.xib in Resources */,
 				DE77479A1ED3378800E034D4 /* LaunchScreen.storyboard in Resources */,
-				DE7748311ED33B3100E034D4 /* 01.jpg in Resources */,
-				DE7748321ED33B3100E034D4 /* 02.jpg in Resources */,
-				DE7748341ED33B3100E034D4 /* 04.jpg in Resources */,
-				DE77482F1ED33B3100E034D4 /* Resources.xcassets in Resources */,
-				DE7748571ED33B3100E034D4 /* WQShareActionCell.xib in Resources */,
-				DE7748371ED33B3100E034D4 /* 07.jpg in Resources */,
-				DE7748361ED33B3100E034D4 /* 06.jpg in Resources */,
+				DE52CA591ED8071700FDE643 /* 04.jpg in Resources */,
+				DE52CA551ED8071700FDE643 /* 00.jpg in Resources */,
 				DE7747971ED3378800E034D4 /* Assets.xcassets in Resources */,
+				DE52CA541ED8071700FDE643 /* Resources.xcassets in Resources */,
 				DE7747921ED3378800E034D4 /* Main.storyboard in Resources */,
+				DE52CA561ED8071700FDE643 /* 01.jpg in Resources */,
+				DE52CA571ED8071700FDE643 /* 02.jpg in Resources */,
+				DE52CA5A1ED8071700FDE643 /* 05.jpg in Resources */,
+				DE52CA481ED8071600FDE643 /* ExamineCell.xib in Resources */,
+				DE52CA5F1ED8071700FDE643 /* WQShareActionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53937BB3223885E75577D22C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WQFunctionDemo/Pods-WQFunctionDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A42AEDCA4C677D7731153DAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WQFunctionDemo/Pods-WQFunctionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D01E386AD432C82AE299758A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE7747801ED3378800E034D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE77483E1ED33B3100E034D4 /* WQBannerLoopView.m in Sources */,
-				DE77482D1ED33B3100E034D4 /* WQCommonBaseTableController.m in Sources */,
-				DE77483D1ED33B3100E034D4 /* WQSelectDateController.m in Sources */,
-				DE7748581ED33B3100E034D4 /* WQShareActionItem.m in Sources */,
-				DE77485A1ED33B3100E034D4 /* MainNavController.m in Sources */,
-				DE7748471ED33B3100E034D4 /* WQTagCollectionViewCell.m in Sources */,
-				DE77483B1ED33B3100E034D4 /* WQCommonAlertBottomView.m in Sources */,
-				DE7748291ED33B3100E034D4 /* WQCommonGroup.m in Sources */,
-				DE77482B1ED33B3100E034D4 /* WQCommonSwitchItem.m in Sources */,
-				DE7748271ED33B3100E034D4 /* WQCommonCenterItem.m in Sources */,
-				DE77485B1ED33B3100E034D4 /* MainTabBarController.m in Sources */,
-				DE77484B1ED33B3100E034D4 /* WQBroserController.m in Sources */,
-				DE7748461ED33B3100E034D4 /* GuDExamineViewController.m in Sources */,
-				DE7748541ED33B3100E034D4 /* WQSelecOptionsView.m in Sources */,
-				DE7748511ED33B3100E034D4 /* WQSelectPhotoViewController.m in Sources */,
-				DE77484F1ED33B3100E034D4 /* WQPresentationController.m in Sources */,
+				DE52CA431ED8071600FDE643 /* WQBannerLoopView.m in Sources */,
+				DE52CA511ED8071700FDE643 /* WQActionSheetController.m in Sources */,
+				DE52CA3E1ED8071600FDE643 /* WQAlertCenterOptionsView.m in Sources */,
+				DE52CA411ED8071600FDE643 /* WQCommonAlertTitleView.m in Sources */,
+				DE52CA531ED8071700FDE643 /* WQSelectOptionsCell.m in Sources */,
 				DE77478F1ED3378800E034D4 /* ViewController.m in Sources */,
-				DE77483F1ED33B3100E034D4 /* WQClendarDayUnit.m in Sources */,
-				DE77484D1ED33B3100E034D4 /* WQControllerTransition.m in Sources */,
-				DE7748241ED33B3100E034D4 /* ZHAnimationView.m in Sources */,
-				DE7748261ED33B3100E034D4 /* WQCommonBaseItem.m in Sources */,
+				DE52CA461ED8071600FDE643 /* WQClendarView.m in Sources */,
 				DE77478C1ED3378800E034D4 /* AppDelegate.m in Sources */,
-				DE77482E1ED33B3100E034D4 /* WQCommonDataResource.m in Sources */,
-				DE77482A1ED33B3100E034D4 /* WQCommonSubtitleItem.m in Sources */,
-				DE77482C1ED33B3100E034D4 /* WQCommonBaseCell.m in Sources */,
-				DE77485E1ED33B3100E034D4 /* GYChangeTextView.m in Sources */,
-				DE7748281ED33B3100E034D4 /* WQCommonCustomItem.m in Sources */,
-				DE7748421ED33B3100E034D4 /* ExamineCell.m in Sources */,
-				DE7748561ED33B3100E034D4 /* WQShareActionCell.m in Sources */,
-				DE7748441ED33B3100E034D4 /* GuDExaminationItem.m in Sources */,
-				DE7748451ED33B3100E034D4 /* GuDExamineDataViewController.m in Sources */,
-				DE7748531ED33B3100E034D4 /* WQActionSheetController.m in Sources */,
-				DE77485D1ED33B3100E034D4 /* WQContainerViewController.m in Sources */,
-				DE7748251ED33B3100E034D4 /* WQCommonArrowItem.m in Sources */,
-				DE7748521ED33B3100E034D4 /* WQActionSheetCell.m in Sources */,
-				DE7748591ED33B3100E034D4 /* WQShareActionViewController.m in Sources */,
-				DE7748391ED33B3100E034D4 /* WQAlertCenterOptionsView.m in Sources */,
-				DE77484E1ED33B3100E034D4 /* WQPopoverPresentationController.m in Sources */,
-				DE77485C1ED33B3100E034D4 /* MenuViewController.m in Sources */,
-				DE77484A1ED33B3100E034D4 /* WQAPPHELP.m in Sources */,
 				DE7747951ED3378800E034D4 /* WQFunctionDemo.xcdatamodeld in Sources */,
-				DE77483C1ED33B3100E034D4 /* WQCommonAlertTitleView.m in Sources */,
-				DE77483A1ED33B3100E034D4 /* WQAlertController.m in Sources */,
-				DE7748551ED33B3100E034D4 /* WQSelectOptionsCell.m in Sources */,
-				DE7748401ED33B3100E034D4 /* WQClendarUnit.m in Sources */,
-				DE7748411ED33B3100E034D4 /* WQClendarView.m in Sources */,
-				DE7748491ED33B3100E034D4 /* WQTagsFlowLayout.m in Sources */,
+				DE52CA4E1ED8071700FDE643 /* WQTagsFlowLayout.m in Sources */,
+				DE52CA3F1ED8071600FDE643 /* WQAlertController.m in Sources */,
+				DE52CA451ED8071600FDE643 /* WQClendarUnit.m in Sources */,
+				DE52CA4B1ED8071700FDE643 /* GuDExamineViewController.m in Sources */,
+				DE52CA4A1ED8071700FDE643 /* GuDExamineDataViewController.m in Sources */,
+				DE52CA401ED8071600FDE643 /* WQCommonAlertBottomView.m in Sources */,
+				DE52CA4F1ED8071700FDE643 /* WQSelectPhotoViewController.m in Sources */,
+				DE52CA491ED8071700FDE643 /* GuDExaminationItem.m in Sources */,
+				DE52CA441ED8071600FDE643 /* WQClendarDayUnit.m in Sources */,
+				DE52CA651ED8071700FDE643 /* WQContainerViewController.m in Sources */,
+				DE52CA661ED8071700FDE643 /* GYChangeTextView.m in Sources */,
+				DE52CA5E1ED8071700FDE643 /* WQShareActionCell.m in Sources */,
+				DE52CA641ED8071700FDE643 /* MenuViewController.m in Sources */,
+				DE52CA421ED8071600FDE643 /* WQSelectDateController.m in Sources */,
+				DE52CA621ED8071700FDE643 /* MainNavController.m in Sources */,
+				DE52CA4C1ED8071700FDE643 /* WQTagCollectionViewCell.m in Sources */,
 				DE7747891ED3378800E034D4 /* main.m in Sources */,
+				DE52CA471ED8071600FDE643 /* ExamineCell.m in Sources */,
+				DE52CA611ED8071700FDE643 /* WQShareActionViewController.m in Sources */,
+				DE52CA521ED8071700FDE643 /* WQSelecOptionsView.m in Sources */,
+				DE52CA601ED8071700FDE643 /* WQShareActionItem.m in Sources */,
+				DE52CA631ED8071700FDE643 /* MainTabBarController.m in Sources */,
+				DE52CA501ED8071700FDE643 /* WQActionSheetCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,6 +695,7 @@
 		};
 		DE77479F1ED3378800E034D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278DBFC22EFA8038731DCCCF /* Pods-WQFunctionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WQFunctionDemo/Info.plist;
@@ -804,6 +708,7 @@
 		};
 		DE7747A01ED3378800E034D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE218D7DDDC8DB52F74AD572 /* Pods-WQFunctionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WQFunctionDemo/Info.plist;
@@ -833,6 +738,7 @@
 				DE7747A01ED3378800E034D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

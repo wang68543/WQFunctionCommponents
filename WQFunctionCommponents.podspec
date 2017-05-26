@@ -5,8 +5,8 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "WQFunctionCommponents"
-  s.version      = "0.0.2"
-  s.summary      = "Usual collection"
+  s.version      = "0.0.3"
+  s.summary      = "UI功能组件"
 
   s.description  = <<-DESC 
                       平常自己使用一些频率比较高得工具、控件的封装,后期使用的时候也不断维护、更新 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  # s.platform     = :ios
+ s.platform     = :ios
   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
@@ -45,71 +45,47 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/wang68543/WQFunctionCommponents.git", :tag => "#{s.version}" }
   s.requires_arc = true
-  # s.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>'
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-# "WQFunctionCommponents",  表示源文件的路径，注意这个路径是相对podspec文件而言的。
-   #import "WQConstans.h"
-#   s.prefix_header_contents =<<-EOS
-#                             #import "WQCache.h"
-#                             EOS
-#   # s.public_header_files = 'WQFunctionCommponents/*.h'
-
-   s.subspec 'AnmationViews' do |ss|
-    ss.subspec 'Animation' do |sss|
-      sss.source_files = 'WQFunctionCommponents/AnmationViews/Animation/*.{h,m}'
+ 
+    s.subspec 'WQAlertUI' do |ss|
+      # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
+      ss.source_files = 'WQFunctionCommponents/WQAlertUI/*.{h,m}'
     end 
-  end
-
-
-  s.subspec 'UIHelp' do |ss|
-    ss.subspec 'Help' do |sss|
-      sss.resources = ['WQFunctionCommponents/UIHelp/Help/*.xib']
-      sss.source_files = 'WQFunctionCommponents/UIHelp/Help/*.{h,m}'
-      sss.public_header_files='WQFunctionCommponents/UIHelp/Help/*.h'
+    s.subspec 'WQBannerLoop' do |ss|
+      # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
+      ss.source_files = 'WQFunctionCommponents/WQBannerLoop/*.{h,m}'
     end
-    ss.subspec 'AlertUI' do |sss|
-      sss.dependency 'WQFunctionCommponents/UIHelp/Help'
-      sss.source_files = 'WQFunctionCommponents/UIHelp/AlertUI/*.{h,m}'
+    s.subspec 'WQClendarUI' do |ss|
+      # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
+      ss.source_files = 'WQFunctionCommponents/WQClendarUI/*.{h,m}'
+    end
+    s.subspec 'WQExamineUI' do |ss|
+      # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
+      ss.source_files = 'WQFunctionCommponents/WQExamineUI/*.{h,m}'
+    end
+    s.subspec 'WQFlowTagUI' do |ss|
+      # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
+      ss.source_files = 'WQFunctionCommponents/WQFlowTagUI/*.{h,m}'
     end 
-    ss.subspec 'BannerLoop' do |sss|
-      sss.dependency 'WQFunctionCommponents/UIHelp/Help'
-      sss.source_files = 'WQFunctionCommponents/UIHelp/BannerLoop/*.{h,m}'
+    s.subspec 'WQPhotoUI' do |ss|
+      # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
+      ss.source_files = 'WQFunctionCommponents/WQPhotoUI/*.{h,m}'
     end
-    ss.subspec 'ClendarUI' do |sss|
-      sss.dependency 'WQFunctionCommponents/UIHelp/Help'
-      sss.source_files = 'WQFunctionCommponents/UIHelp/ClendarUI/*.{h,m}'
+    s.subspec 'WQPopSelectionsUI' do |ss|
+      # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
+      ss.source_files = 'WQFunctionCommponents/WQPopSelectionsUI/*.{h,m}'
     end
-    ss.subspec 'ExamineUI' do |sss|
-      sss.dependency 'WQFunctionCommponents/UIHelp/Help'
-      sss.source_files = 'WQFunctionCommponents/UIHelp/ExamineUI/*.{h,m}'
+    s.subspec 'WQShareUI' do |ss|
+      # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
+      ss.resources = ["WQFunctionCommponents/WQShareUI/*.xib"] 
+      ss.source_files = 'WQFunctionCommponents/WQShareUI/*.{h,m}'
     end
-    ss.subspec 'FlowTagUI' do |sss|
-      sss.dependency 'WQFunctionCommponents/UIHelp/Help'
-      sss.source_files = 'WQFunctionCommponents/UIHelp/FlowTagUI/*.{h,m}'
+    s.subspec 'WQSlideMenu' do |ss|
+      ss.source_files = 'WQFunctionCommponents/WQSlideMenu/*.{h,m}'
     end 
-    ss.subspec 'PhotoUI' do |sss|
-      sss.dependency 'WQFunctionCommponents/UIHelp/Help'
-      sss.source_files = 'WQFunctionCommponents/UIHelp/PhotoUI/*.{h,m}'
+    s.subspec 'WQVerticalLoopText' do |ss|
+      ss.source_files = 'WQFunctionCommponents/WQVerticalLoopText/*.{h,m}'
     end
-    ss.subspec 'PopSelectionsUI' do |sss|
-      sss.dependency 'WQFunctionCommponents/UIHelp/Help'
-      sss.source_files = 'WQFunctionCommponents/UIHelp/PopSelectionsUI/*.{h,m}'
-    end
-    ss.subspec 'ShareUI' do |sss|
-      sss.dependency 'WQFunctionCommponents/UIHelp/Help'
-      sss.resources = ["WQFunctionCommponents/UIHelp/ShareUI/*.xib"] 
-      sss.source_files = 'WQFunctionCommponents/UIHelp/ShareUI/*.{h,m}'
-    end
-    ss.subspec 'SlideMenu' do |sss|
-      sss.source_files = 'WQFunctionCommponents/UIHelp/SlideMenu/*.{h,m}'
-    end 
-    ss.subspec 'VerticalLoopText' do |sss|
-      sss.source_files = 'WQFunctionCommponents/UIHelp/VerticalLoopText/*.{h,m}'
-    end
-  end
-    s.subspec 'WQCommonTableView' do |ss|
-     ss.dependency 'WQFunctionCommponents/UIHelp/Help'
-     ss.source_files = 'WQFunctionCommponents/CommonTableView/**/*.{h,m}'
-  end
+ 
+  s.dependency 'WQBaseUIComponents'
 end
