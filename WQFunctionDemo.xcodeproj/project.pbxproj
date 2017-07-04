@@ -49,6 +49,7 @@
 		DE52CA641ED8071700FDE643 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA381ED8071600FDE643 /* MenuViewController.m */; };
 		DE52CA651ED8071700FDE643 /* WQContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA3A1ED8071600FDE643 /* WQContainerViewController.m */; };
 		DE52CA661ED8071700FDE643 /* GYChangeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52CA3D1ED8071600FDE643 /* GYChangeTextView.m */; };
+		DE67B2BC1EEB1568007B8930 /* WQCustomSelectDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE67B2BB1EEB1568007B8930 /* WQCustomSelectDateView.m */; };
 		DE7747891ED3378800E034D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7747881ED3378800E034D4 /* main.m */; };
 		DE77478C1ED3378800E034D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77478B1ED3378800E034D4 /* AppDelegate.m */; };
 		DE77478F1ED3378800E034D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77478E1ED3378800E034D4 /* ViewController.m */; };
@@ -134,6 +135,8 @@
 		DE52CA3C1ED8071600FDE643 /* GYChangeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYChangeTextView.h; sourceTree = "<group>"; };
 		DE52CA3D1ED8071600FDE643 /* GYChangeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYChangeTextView.m; sourceTree = "<group>"; };
 		DE52CA671ED80BD400FDE643 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DE67B2BA1EEB1568007B8930 /* WQCustomSelectDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQCustomSelectDateView.h; sourceTree = "<group>"; };
+		DE67B2BB1EEB1568007B8930 /* WQCustomSelectDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQCustomSelectDateView.m; sourceTree = "<group>"; };
 		DE7747841ED3378800E034D4 /* WQFunctionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WQFunctionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7747881ED3378800E034D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE77478A1ED3378800E034D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -209,6 +212,8 @@
 				DE52C9F31ED8071600FDE643 /* WQCommonAlertTitleView.m */,
 				DE52C9F41ED8071600FDE643 /* WQSelectDateController.h */,
 				DE52C9F51ED8071600FDE643 /* WQSelectDateController.m */,
+				DE67B2BA1EEB1568007B8930 /* WQCustomSelectDateView.h */,
+				DE67B2BB1EEB1568007B8930 /* WQCustomSelectDateView.m */,
 			);
 			path = WQAlertUI;
 			sourceTree = "<group>";
@@ -564,6 +569,7 @@
 				DE52CA4F1ED8071700FDE643 /* WQSelectPhotoViewController.m in Sources */,
 				DE52CA491ED8071700FDE643 /* GuDExaminationItem.m in Sources */,
 				DE52CA441ED8071600FDE643 /* WQClendarDayUnit.m in Sources */,
+				DE67B2BC1EEB1568007B8930 /* WQCustomSelectDateView.m in Sources */,
 				DE52CA651ED8071700FDE643 /* WQContainerViewController.m in Sources */,
 				DE52CA661ED8071700FDE643 /* GYChangeTextView.m in Sources */,
 				DE52CA5E1ED8071700FDE643 /* WQShareActionCell.m in Sources */,

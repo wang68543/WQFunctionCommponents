@@ -6,7 +6,7 @@
 //  Copyright © 2016年 WangQiang. All rights reserved.
 //
 
-#import "WQSelectPhotoViewController.h"
+#import "WQSelectPhotoController.h"
 #import <WQBaseUIComponents/WQAPPHELP.h>
 #import <WQBaseUIComponents/WQControllerTransition.h>
 #define APP_WIDTH [[UIScreen mainScreen] bounds].size.width
@@ -15,14 +15,20 @@
 #define subViewH  50
 #define subBGColor(alph) [UIColor colorWithRed:242/255.0 green:244/255.0 blue:245/255.0 alpha:(alph)]
 #define btnFont [UIFont systemFontOfSize:16.0]
-@interface WQSelectPhotoViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface WQSelectPhotoController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (strong ,nonatomic) UIView *actionSheetView;
-@property (strong ,nonatomic) UIViewController *controller;
+@property (strong ,nonatomic,readonly) UIViewController *controller;
 @property (strong ,nonatomic) WQControllerTransition *bottomTranstion;
 
 @end
 
-@implementation WQSelectPhotoViewController
+@implementation WQSelectPhotoController
++(instancetype)showSelectPhotoDelegate:(id<WQPhotoSelectedDelegate>) delegate inController:(UIViewController *)inController{
+    WQSelectPhotoController *photoController = [[WQSelectPhotoController alloc] init];
+    photoController.delegate = delegate;
+    [photoController showInController:inController];
+    return photoController;
+}
 -(WQControllerTransition *)bottomTranstion{
     if(!_bottomTranstion){
       _bottomTranstion =  [WQControllerTransition transitionWithAnimatedView:self.actionSheetView];
@@ -51,7 +57,7 @@
 
 -(void)showInController:(UIViewController *)controller{
     if(!controller)controller = [WQAPPHELP visibleViewController];
-    self.controller = controller;
+    _controller = controller;
     self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
 //    self.view.backgroundColor = [UIColor clearColor];
     
@@ -169,7 +175,8 @@
 {
     
     __weak typeof(self) weakSelf = self;
-    [self.controller dismissViewControllerAnimated:NO completion:^{
+    //self.controller 选中了 同时让当前控制器也销毁
+    [self.controller dismissViewControllerAnimated:YES completion:^{
         //
         if([weakSelf.delegate respondsToSelector:@selector(photoSelectedViewDidFinshSelectedImage:)]){
             [weakSelf.delegate photoSelectedViewDidFinshSelectedImage:info[UIImagePickerControllerOriginalImage]];
@@ -191,4 +198,5 @@
     }
     
 }
+
 @end

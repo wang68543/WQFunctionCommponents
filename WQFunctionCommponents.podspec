@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "WQFunctionCommponents"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "UI功能组件"
 
   s.description  = <<-DESC 
@@ -59,10 +59,10 @@ Pod::Spec.new do |s|
       # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
       ss.source_files = 'WQFunctionCommponents/WQClendarUI/*.{h,m}'
     end
-    s.subspec 'WQExamineUI' do |ss|
-      # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
-      ss.source_files = 'WQFunctionCommponents/WQExamineUI/*.{h,m}'
-    end
+    # s.subspec 'WQExamineUI' do |ss|
+    #   # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
+    #   ss.source_files = 'WQFunctionCommponents/WQExamineUI/*.{h,m}'
+    # end
     s.subspec 'WQFlowTagUI' do |ss|
       # ss.dependency 'WQFunctionCommponents/UIHelp/Help'
       ss.source_files = 'WQFunctionCommponents/WQFlowTagUI/*.{h,m}'

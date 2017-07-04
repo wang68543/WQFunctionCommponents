@@ -83,7 +83,7 @@
     }else if(rect.origin.y  - self.topInset > contentSizeHeight){ //如果向上高度够的话就向上显示
          [self showWithRect:rect position:ShowPostionUp];
     }else {//都不够的话就向下显示
-        if(CGRectGetMaxY(rect) < [[UIScreen mainScreen] bounds].size.height*0.5){
+        if(CGRectGetMaxY(rect) - 64.0 < [[UIScreen mainScreen] bounds].size.height*0.5){
             [self showWithRect:rect position:ShowPostionDown];
         }else{
            [self showWithRect:rect position:ShowPostionUp];
