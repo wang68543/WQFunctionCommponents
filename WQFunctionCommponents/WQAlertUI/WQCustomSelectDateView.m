@@ -181,13 +181,13 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
         UILabel *startTip = [[UILabel alloc] init];
         startTip.textAlignment = NSTextAlignmentCenter;
         _startTip = startTip;
-        startTip.text = @"起始时间";
+        startTip.text = NSLocalizedString(@"起始时间", nil);
         startTip.font = [UIFont systemFontOfSize:15.0];
         [_doubleDateTipView addSubview:startTip];
         
         UILabel *endTip = [[UILabel alloc] init];
         endTip.textAlignment = NSTextAlignmentCenter;
-        endTip.text = @"结束时间";
+        endTip.text = NSLocalizedString(@"结束时间", nil);
         endTip.font = [UIFont systemFontOfSize:15.0];
         _endTip = endTip;
         [_doubleDateTipView addSubview:endTip];
@@ -214,7 +214,7 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
         self.doubleDateTipView.frame = CGRectMake(0.0, 0.0, selfW, tipH);
         _startTip.frame = CGRectMake(0, 0, selfW*0.5, tipH);
         _endTip.frame = CGRectMake(CGRectGetMaxX(_startTip.frame), 0.0, selfW*0.5, tipH);
-        _customDatePicker.frame = CGRectMake(0, tipH,selfW ,selfH-tipH);
+        _customDatePicker.frame = CGRectMake(0, tipH - 8.0,selfW ,selfH-tipH);
         _midLineView.frame = CGRectMake(selfW *0.5 - 0.5, 0.0, 1.0, selfH);
     }else{
         _doubleDateTipView.frame = CGRectZero;
@@ -264,7 +264,16 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
     
     return rows;
 }
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+-(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+    
+    UILabel *contentLabel;
+    if(!view){
+        contentLabel = [[UILabel alloc] init];
+        contentLabel.adjustsFontSizeToFitWidth = YES;
+        contentLabel.textAlignment = NSTextAlignmentCenter;
+    }else{
+        contentLabel = (UILabel *)view;
+    }
     NSString *unit = @"";
     if(component<self.customUnits.count){
         unit = self.customUnits[component];
@@ -275,7 +284,7 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
     switch (_customDateMode) {
         case WQCustomDateYearAndMonth:
             if(component == 0){
-                showTitle = [NSString stringWithFormat:@"%ld%@",self.minDateCompments.year + row,unit];
+                showTitle = [NSString stringWithFormat:@"%ld%@",(long)(self.minDateCompments.year + row),unit];
             }else{
                 NSInteger selectedRow = [pickerView selectedRowInComponent:0];
                 NSInteger month;
@@ -284,9 +293,9 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
                 }else {
                     month = row + 1;
                 }
-                showTitle = [NSString stringWithFormat:@"%ld%@",month,unit];
+                showTitle = [NSString stringWithFormat:@"%ld%@",(long)month,unit];
             }
-
+            
             break;
         case WQCustomDateDoubleHourAndMinutes:
             showTitle = [NSString stringWithFormat:@"%02ld%@",(long)row,unit];
@@ -294,8 +303,44 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
         default:
             break;
     }
-       return showTitle;
+    contentLabel.text = showTitle;
+    
+    
+    return contentLabel;
 }
+
+//-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+//    NSString *unit = @"";
+//    if(component<self.customUnits.count){
+//        unit = self.customUnits[component];
+//    }
+//    
+//    NSString *showTitle = @"";
+//    
+//    switch (_customDateMode) {
+//        case WQCustomDateYearAndMonth:
+//            if(component == 0){
+//                showTitle = [NSString stringWithFormat:@"%ld%@",self.minDateCompments.year + row,unit];
+//            }else{
+//                NSInteger selectedRow = [pickerView selectedRowInComponent:0];
+//                NSInteger month;
+//                if(selectedRow == 0){
+//                    month = self.minDateCompments.month + row;
+//                }else {
+//                    month = row + 1;
+//                }
+//                showTitle = [NSString stringWithFormat:@"%ld%@",month,unit];
+//            }
+//
+//            break;
+//        case WQCustomDateDoubleHourAndMinutes:
+//            showTitle = [NSString stringWithFormat:@"%02ld%@",(long)row,unit];
+//            break;
+//        default:
+//            break;
+//    }
+//       return showTitle;
+//}
 -(CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component{
     return pickerView.frame.size.height/4.0;
 }

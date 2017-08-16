@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "WQFunctionCommponents"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "UI功能组件"
 
   s.description  = <<-DESC 

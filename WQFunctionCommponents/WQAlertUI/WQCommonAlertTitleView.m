@@ -37,7 +37,13 @@
     }
     return _bottomLine;
 }
-+(nonnull instancetype)titleViewWithTitle:(nullable NSString *)title icon:(nullable UIImage *)titleIcon{
+//+(nonnull instancetype)titleViewWithTitle:(nullable NSString *)title icon:(nullable UIImage *)titleIcon{
+//    return [[self alloc] initWithTitle:title icon:titleIcon];
+//}
++(instancetype)commonTitle:(NSString *)title{
+    return [[self alloc] initWithTitle:title icon:nil];
+}
++(instancetype)commonTitle:(NSString *)title icon:(UIImage *)titleIcon{
     return [[self alloc] initWithTitle:title icon:titleIcon];
 }
 -(instancetype)initWithTitle:(NSString *)title icon:(UIImage *)titleIcon{

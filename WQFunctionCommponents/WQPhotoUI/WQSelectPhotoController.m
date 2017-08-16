@@ -9,6 +9,7 @@
 #import "WQSelectPhotoController.h"
 #import <WQBaseUIComponents/WQAPPHELP.h>
 #import <WQBaseUIComponents/WQControllerTransition.h>
+
 #define APP_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define APP_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define DivLineBG UIColorMake(225, 226, 230, 1.0)
@@ -140,34 +141,29 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 #pragma mark --打开照相机
-- (void)openCamera
-{
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
-        NSLog(@"不支持拍照功能");
-        return;
-    }
-    
-    UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
-    ipc.sourceType = UIImagePickerControllerSourceTypeCamera;
-    ipc.allowsEditing = self.allowsEditing;
-    ipc.delegate = self;
-    ipc.navigationBar.barTintColor = [UIColor groupTableViewBackgroundColor] ;
-    [self presentViewController:ipc animated:YES completion:nil];
+- (void)openCamera{
+    [self openMediaWithSourceType:UIImagePickerControllerSourceTypeCamera];
 }
 
 #pragma mark --打开相册
-- (void)openAlbum
-{
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]){
-        NSLog(@"不支持相册功能");
+- (void)openAlbum{
+    [self openMediaWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+}
+
+#pragma mark -- 私有方法 
+- (void)openMediaWithSourceType:(UIImagePickerControllerSourceType)sourceType{
+    if (![UIImagePickerController isSourceTypeAvailable:sourceType]){
+        NSLog(@"此功能不支持");
         return;
     }
     UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
     ipc.allowsEditing = self.allowsEditing;
-    ipc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    
+    ipc.sourceType = sourceType;
     ipc.delegate = self;
-    ipc.navigationBar.barTintColor = [UIColor groupTableViewBackgroundColor];
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    if (!navBar.barTintColor) {
+         ipc.navigationBar.barTintColor = [UIColor groupTableViewBackgroundColor];
+    }
     [self presentViewController:ipc animated:YES completion:nil];
 }
 #pragma mark --UIImagePickerControllerDelegate

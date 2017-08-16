@@ -9,36 +9,32 @@
 #import "WQAlertController.h"
 #import "WQCommonAlertTitleView.h"
 #import "WQCommonAlertBottomView.h"
-
-
-//#import "WQConstans.h"
-//#import "WQAPPHELP.h"
-//#import "WQControllerTransition.h"
 #import <WQBaseUIComponents/WQAPPHELP.h>
-
 #define APP_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define APP_HEIGHT [[UIScreen mainScreen] bounds].size.height
-@interface WQAlertController ()<WQAlertBottomViewDelegate,UIGestureRecognizerDelegate>{
-    NSMutableDictionary *_actions;
-    UITapGestureRecognizer *_tapBackGR;
-    BOOL _hasObserver;
+
+@implementation UIView (WQAlertCenterView)
++(instancetype)centerViewWithText:(NSString *)text{
+    return [self centerViewWithText:text edges:UIEdgeInsetsMake(15.0, 15.0, 15.0, 15.0)];
 }
-@property (strong ,nonatomic) UIView *containerView;
-@property (strong ,nonatomic) WQControllerTransition *bottomTranstion;
-@end
-
-@implementation WQAlertController
-
--(UIView *)containerView{
-    if(!_containerView){
-        _containerView = [[UIView alloc] init];
-        
-    }
-    return _containerView;
++(instancetype)centerViewWithText:(NSString *)text edges:(UIEdgeInsets)edges{
+    return [self centerViewWithAttributeText:[[NSAttributedString alloc] initWithString:text attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16.0],NSForegroundColorAttributeName:[UIColor blackColor]}] edges:edges];
 }
-
-+(UIView *)centerTextFiledWithTip:(NSString *)tipMessage configurationHandler:(void (^)(UITextField * _Nonnull))handler{
-    UIView *contentView = [[UIView alloc] init];
++(instancetype)centerViewWithAttributeText:(NSAttributedString *)attributeText edges:(UIEdgeInsets)edges{
+    UIView *centerView = [[UIView alloc] init];
+    UILabel *contentLabel = [[UILabel alloc] init];
+    contentLabel.numberOfLines = 0;
+    contentLabel.attributedText = attributeText;
+    CGFloat maxWith = AlertCenterWidth - edges.left - edges.right;
+    CGSize contentSize = [attributeText boundingRectWithSize:CGSizeMake(maxWith, APP_HEIGHT *0.5) options:NSStringDrawingUsesLineFragmentOrigin context:nil].size;
+    centerView.bounds = CGRectMake(0, 0, AlertCenterWidth, contentSize.height + edges.top + edges.bottom);
+    contentLabel.frame = CGRectMake(edges.left, edges.top, AlertCenterWidth, contentSize.height);
+    [centerView addSubview:contentLabel];
+    return centerView;
+}
+//TODO: 初始化一个输入框弹出框的中间视图
++(instancetype)centerTextFiledWithTip:(NSString *)tipMessage configurationHandler:(void (^)(UITextField * _Nonnull))handler{
+    UIView *contentView = [[self alloc] init];
     CGFloat contentY = 10.0;
     CGFloat leftPadding = 15.0;
     CGFloat contentW = AlertCenterWidth - leftPadding *2;
@@ -56,69 +52,37 @@
     textField.frame = CGRectMake(leftPadding, contentY+10.0, contentW, 38.0);
     [contentView addSubview:textField];
     contentView.frame = CGRectMake(0, 0, AlertCenterWidth, CGRectGetMaxY(textField.frame)+10.0);
+    
     handler?handler(textField):nil;
+    
     return contentView;
 }
 
-+(instancetype)alertViewWithTitle:(NSString *)title centerView:(UIView *)centerView{
-    return [[self alloc] initWithTitle:title titleIcon:nil centerView:centerView confirmTitle:@"确定" cancelTitle:@"取消"];
+@end
+//TODO: -- -具体的弹出框
+@interface WQAlertController ()<WQAlertBottomViewDelegate,UIGestureRecognizerDelegate>{
+    NSMutableDictionary *_actions;
+    UITapGestureRecognizer *_tapBackGR;
+    BOOL _hasObserver;
 }
-+(instancetype)alertViewWithIcon:(NSString *)titleIcon centerView:(UIView *)centerView{
-    return [[self alloc] initWithTitle:nil titleIcon:titleIcon centerView:centerView confirmTitle:@"确定" cancelTitle:@"取消"];
-}
-+(instancetype)alertWithCenterView:(UIView *)centerView{
-    return [self alertWithCenterView:centerView isNeedBottomView:YES];
-}
-+(nonnull instancetype)alertWithCenterView:(nonnull UIView *)centerView isNeedBottomView:(BOOL)needBottom{
-    NSString *confirmTitle;
-    NSString *cancelTitle;
-    if(needBottom){
-        confirmTitle = @"确定";
-        cancelTitle = @"取消";
-    }
-    return [[self alloc] initWithTitle:nil titleIcon:nil centerView:centerView confirmTitle:confirmTitle cancelTitle:cancelTitle];
-}
-+(instancetype)alertViewWithTitle:(NSString *)title titleIcon:(NSString *)titleIcon centerView:(UIView *)centerView confirmTitle:(NSString *)confirmitle cancelTitle:(NSString *)cancelTitle{
-    return [[self alloc] initWithTitle:title titleIcon:titleIcon centerView:centerView confirmTitle:@"确定" cancelTitle:@"取消"];
-}
-+(instancetype)alertWithContent:(NSString *)content{
-    
-    return [self alertWithContent:content title:nil];
-}
+@property (strong ,nonatomic) UIView *containerView;
+@property (strong ,nonatomic) WQControllerTransition *bottomTranstion;
+@end
 
-+(instancetype)alertWithContent:(NSString *)content title:(NSString *)title{
-    if(!content || content.length <= 0) return nil;
-    UILabel *contentLabel = [[UILabel alloc] init];
-    contentLabel.text = content;
-    contentLabel.numberOfLines = 0;
-    UIEdgeInsets _contentEdge = UIEdgeInsetsMake(15, 15, 15, 15);
-    CGFloat contentWidth = AlertCenterWidth - _contentEdge.left - _contentEdge.right;
-    UIFont *contentFont = [UIFont systemFontOfSize:17.0];
-    
-    CGSize contentSize = [contentLabel.text boundingRectWithSize:CGSizeMake(contentWidth, APP_HEIGHT - 280) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName :contentFont} context:nil].size;
-    contentLabel.frame = (CGRect){CGPointMake(_contentEdge.left, _contentEdge.top),contentSize};
-    UIView *centerView = [[UIView alloc] init];
-    centerView.backgroundColor = [UIColor clearColor];
-    centerView.bounds = CGRectMake(0, 0, AlertCenterWidth, contentSize.height + _contentEdge.top + _contentEdge.bottom);
-    [centerView addSubview:contentLabel];
-    return [self alertViewWithTitle:title centerView:centerView];
-}
-
-+(instancetype)alertViewWithTopView:(UIView<WQAlertTitleViewProtocol> *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView{
+@implementation WQAlertController
++(instancetype)alertViewWithTopView:(UIView *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView{
     return [[self alloc] initWithTopView:topView centerView:centerView bottomView:bottomView];
 }
 
--(instancetype)initWithTitle:(nullable NSString *)title
-                   titleIcon:(nullable NSString *)titleIcon
-                  centerView:(nonnull UIView *)centerView
-                confirmTitle:(nullable NSString *)confirmitle
-                 cancelTitle:(nullable NSString *)cancelTitle{
-    
-    UIView<WQAlertTitleViewProtocol> *topView = [self configTitleViewWithTitle:title icon:titleIcon];
-    UIView<WQAlertBottomViewProtocol>*bottom =  [self configBottomViewWithConfirm:confirmitle cancel:cancelTitle];
-    return [self initWithTopView:topView centerView:centerView bottomView:bottom];
+
+-(UIView *)containerView{
+    if(!_containerView){
+        _containerView = [[UIView alloc] init];
+    }
+    return _containerView;
 }
--(instancetype)initWithTopView:(UIView<WQAlertTitleViewProtocol> *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView{
+
+-(instancetype)initWithTopView:(UIView *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView{
     if(self = [super init]){
         _actions = [NSMutableDictionary dictionary];
         _centerViews = [NSMutableArray array];
@@ -140,16 +104,7 @@
     return self;
 }
 
-#pragma mark -- 配置标题视图
--(UIView<WQAlertTitleViewProtocol>*)configTitleViewWithTitle:(NSString *)title icon:(NSString *)titileIcon{
-    UIView <WQAlertTitleViewProtocol> *_topView ;
-    if(title || titileIcon){
-        _topView = [WQCommonAlertTitleView titleViewWithTitle:title icon:[UIImage imageNamed:titileIcon]];
-    }else{
-        _topView = nil;
-    }
-    return _topView;
-}
+
 -(void)setContainerViewRadius:(CGFloat)containerViewRadius{
     if(containerViewRadius < 0) containerViewRadius = 0 ;
     if(containerViewRadius != _containerViewRadius){
@@ -158,23 +113,7 @@
         self.containerView.layer.masksToBounds = YES;
     }
 }
-#pragma mark -- 配置底部视图
--(UIView<WQAlertBottomViewProtocol>*)configBottomViewWithConfirm:(NSString *)confirmTitle cancel:(NSString *)cancelTitle{
-//    if(_bottomView){
-//        [_bottomView removeFromSuperview];
-//    }
-    UIView <WQAlertBottomViewProtocol>*_bottom;
-    if(confirmTitle || cancelTitle){
-        _bottom = [WQCommonAlertBottomView bottomViewWithConfirmTitle:confirmTitle cancelTitle:cancelTitle ];
-        _bottom.delegate = self;
-//        [self.containerView addSubview:self.bottomView];
-   
-    }else{
-        _bottom = nil;
-//        [self configTapGR];
-    }
-    return _bottom;
-}
+
 #pragma mark -- 配置中间视图
 -(void)configCenterView:(UIView *)centerView{
     if(_topCenterView)[_topCenterView removeFromSuperview];
@@ -216,7 +155,10 @@
     CGFloat centerViewHeight = 0.0;
     CGFloat centerViewWidth = MIN(CGRectGetWidth(_topCenterView.frame), AlertCenterWidth);
     if(_titleView){
-        _titleView.frame = CGRectMake(0, 0, centerViewWidth, [_titleView heightForView]);
+        
+        if (CGRectEqualToRect(_titleView.frame, CGRectZero)) {
+            _titleView.frame = CGRectMake(0, 0, AlertCenterWidth, kAlertTitleViewH);
+        }
         centerViewHeight += CGRectGetHeight(_titleView.frame);
     }
     
@@ -258,7 +200,7 @@
     return nil;
 }
 -(void)dealloc{
-      NSLog(@"弹出框销毁了");
+//      NSLog(@"弹出框销毁了");
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 -(void)keyboardWillChangeFrame:(NSNotification *)note{
@@ -314,7 +256,10 @@
     self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];*/
     //    self.modalTransitionStyle 系统的翻页效果
     self.modalPresentationStyle = UIModalPresentationCustom;
+    
     [inViewController presentViewController:self animated:YES completion:NULL];
+    //用于解决present延迟弹出的问题
+    CFRunLoopWakeUp(CFRunLoopGetCurrent()); // Fixes a bug where the main thread may be asleep, especially when using UITableViewCellSelectionStyleNone
 }
 #pragma amrk -- AlertBottomViewDelegate
 -(void)bottomViewDidClickConfirmAction{
@@ -418,3 +363,102 @@
 
 @end
 
+
+//TODO: -- -过时的初始化方法
+@implementation WQAlertController(Deprecated)
+
++(instancetype)alertViewWithTitle:(NSString *)title centerView:(UIView *)centerView{
+    return [[self alloc] initWithTitle:title titleIcon:nil centerView:centerView confirmTitle:@"确定" cancelTitle:@"取消"];
+}
++(instancetype)alertViewWithIcon:(NSString *)titleIcon centerView:(UIView *)centerView{
+    return [[self alloc] initWithTitle:nil titleIcon:titleIcon centerView:centerView confirmTitle:@"确定" cancelTitle:@"取消"];
+}
++(instancetype)alertWithCenterView:(UIView *)centerView{
+    return [self alertWithCenterView:centerView isNeedBottomView:YES];
+}
++(nonnull instancetype)alertWithCenterView:(nonnull UIView *)centerView isNeedBottomView:(BOOL)needBottom{
+    NSString *confirmTitle;
+    NSString *cancelTitle;
+    if(needBottom){
+        confirmTitle = @"确定";
+        cancelTitle = @"取消";
+    }
+    return [[self alloc] initWithTitle:nil titleIcon:nil centerView:centerView confirmTitle:confirmTitle cancelTitle:cancelTitle];
+}
++(nonnull instancetype)alert:(nullable NSString *)title
+                   titleIcon:(nullable NSString *)titleIcon
+                     content:(nonnull NSString *)content
+                     confirm:( nullable NSString *)confirmTitle
+                      cancel:(nullable NSString *)cancelTitle{
+    return [self alertViewWithTitle:title titleIcon:titleIcon centerView:[self contentLabelViewWithText:content] confirmTitle:confirmTitle cancelTitle:cancelTitle];
+}
++(instancetype)alertViewWithTitle:(NSString *)title titleIcon:(NSString *)titleIcon centerView:(UIView *)centerView confirmTitle:(NSString *)confirmTitle cancelTitle:(NSString *)cancelTitle{
+    return [[self alloc] initWithTitle:title titleIcon:titleIcon centerView:centerView confirmTitle:NSLocalizedString(@"确定", nil) cancelTitle:NSLocalizedString(@"取消", nil)];
+}
++(instancetype)alertWithContent:(NSString *)content{
+    
+    return [self alertWithContent:content title:nil];
+}
++(UIView *)contentLabelViewWithText:(NSString *)text{
+    UILabel *contentLabel = [[UILabel alloc] init];
+    contentLabel.text = text;
+    contentLabel.numberOfLines = 0;
+    UIEdgeInsets _contentEdge = UIEdgeInsetsMake(15, 15, 15, 15);
+    CGFloat contentWidth = AlertCenterWidth - _contentEdge.left - _contentEdge.right;
+    UIFont *contentFont = [UIFont systemFontOfSize:17.0];
+    
+    CGSize contentSize = [contentLabel.text boundingRectWithSize:CGSizeMake(contentWidth, APP_HEIGHT - 280) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName :contentFont} context:nil].size;
+    contentLabel.frame = (CGRect){CGPointMake(_contentEdge.left, _contentEdge.top),contentSize};
+    UIView *centerView = [[UIView alloc] init];
+    centerView.backgroundColor = [UIColor clearColor];
+    centerView.bounds = CGRectMake(0, 0, AlertCenterWidth, contentSize.height + _contentEdge.top + _contentEdge.bottom);
+    [centerView addSubview:contentLabel];
+    return centerView;
+}
+
++(instancetype)alertWithContent:(NSString *)content title:(NSString *)title{
+    if(!content || content.length <= 0) return nil;
+    
+    return [self alertViewWithTitle:title centerView:[self contentLabelViewWithText:content]];
+}
+
+
+-(instancetype)initWithTitle:(nullable NSString *)title
+                   titleIcon:(nullable NSString *)titleIcon
+                  centerView:(nonnull UIView *)centerView
+                confirmTitle:(nullable NSString *)confirmitle
+                 cancelTitle:(nullable NSString *)cancelTitle{
+    
+    UIView *topView = [self configTitleViewWithTitle:title icon:titleIcon];
+    UIView<WQAlertBottomViewProtocol>*bottom =  [self configBottomViewWithConfirm:confirmitle cancel:cancelTitle];
+    return [self initWithTopView:topView centerView:centerView bottomView:bottom];
+}
+#pragma mark -- 配置标题视图
+-(UIView *)configTitleViewWithTitle:(NSString *)title icon:(NSString *)titileIcon{
+    UIView  *_topView ;
+    if(title || titileIcon){
+        _topView = [WQCommonAlertTitleView commonTitle:title icon:[UIImage imageNamed:titileIcon]];
+    }else{
+        _topView = nil;
+    }
+    return _topView;
+}
+
+#pragma mark -- 配置底部视图
+-(UIView<WQAlertBottomViewProtocol>*)configBottomViewWithConfirm:(NSString *)confirmTitle cancel:(NSString *)cancelTitle{
+    //    if(_bottomView){
+    //        [_bottomView removeFromSuperview];
+    //    }
+    UIView <WQAlertBottomViewProtocol>*_bottom;
+    if(confirmTitle || cancelTitle){
+        _bottom = [WQCommonAlertBottomView bottomViewWithConfirmTitle:confirmTitle cancelTitle:cancelTitle ];
+        _bottom.delegate = self;
+        //        [self.containerView addSubview:self.bottomView];
+        
+    }else{
+        _bottom = nil;
+        //        [self configTapGR];
+    }
+    return _bottom;
+}
+@end

@@ -155,7 +155,7 @@ static CGFloat const TitleViewHeight = 49.0;
 - (void)configCenterAlertViewWithTitle:(NSString *)alertTitle{
     CGFloat offsetY = 0;
     if(alertTitle){
-        _titleView = [WQCommonAlertTitleView titleViewWithTitle:alertTitle icon:nil];
+        _titleView = [WQCommonAlertTitleView commonTitle:alertTitle];
         _titleView.frame = CGRectMake(0, 0, CenterAlertWidth, TitleViewHeight);
         offsetY += TitleViewHeight;
         [_containerView addSubview:_titleView];

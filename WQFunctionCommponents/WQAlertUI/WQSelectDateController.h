@@ -12,8 +12,8 @@
 
 @class WQSelectDateController;
 
-typedef void(^_Nullable ConfirmDate)(WQSelectDateController * _Nonnull dateController,NSArray * _Nonnull dates);
-typedef void(^_Nullable ChangeDate)( NSArray * _Nullable dates);
+typedef void(^_Nullable ConfirmDate)(WQSelectDateController * _Nonnull dateController,NSArray<NSDate *> * _Nonnull dates);
+typedef void(^_Nullable ChangeDate)( NSArray<NSDate *> * _Nullable dates);
 typedef void(^_Nullable CancelDate)(WQSelectDateController * _Nonnull dateController);
 
 @interface WQSelectDateController : UIViewController

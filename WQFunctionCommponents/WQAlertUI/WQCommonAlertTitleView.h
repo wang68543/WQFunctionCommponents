@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WQAlertTitleViewProtocol.h"
+//#import "WQAlertTitleViewProtocol.h"
+////<WQAlertTitleViewProtocol>
 
-@interface WQCommonAlertTitleView : UIView<WQAlertTitleViewProtocol>
+#define kAlertTitleViewH 49.0
+@interface WQCommonAlertTitleView : UIView
 @property (copy ,nonatomic,nullable) NSString *title;
 @property (strong ,nonatomic,nullable) UIImage *titleIcon;
 @property (nullable,strong ,nonatomic) NSDictionary * titleAttribute;
++(nonnull instancetype)commonTitle:(nonnull NSString *)title;
++(nonnull instancetype)commonTitle:(nonnull NSString *)title icon:(nullable UIImage *)titleIcon;
 
 -(nonnull instancetype)initWithTitle:(nullable NSString *)title icon:(nullable UIImage *)titleIcon;
 @end

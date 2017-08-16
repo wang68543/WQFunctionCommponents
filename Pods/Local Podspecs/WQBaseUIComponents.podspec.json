@@ -1,6 +1,6 @@
 {
   "name": "WQBaseUIComponents",
-  "version": "0.0.1",
+  "version": "0.1.5",
   "summary": "基础组件(UI部分)",
   "description": "平常自己使用一些频率比较高得工具、控件的封装,后期使用的时候也不断维护、更新",
   "homepage": "https://github.com/wang68543/WQBaseUIComponents",
@@ -13,9 +13,10 @@
   },
   "source": {
     "git": "https://github.com/wang68543/WQBaseUIComponents.git",
-    "tag": "0.0.1"
+    "tag": "0.1.5"
   },
   "requires_arc": true,
+  "source_files": "WQBaseUIComponents/WQBaseUIComponents.h",
   "subspecs": [
     {
       "name": "AnmationViews",
@@ -40,6 +41,49 @@
       ]
     },
     {
+      "name": "UICategory",
+      "subspecs": [
+        {
+          "name": "UICategory_Vendor",
+          "source_files": "WQBaseUIComponents/UICategory/UICategory_Vendor/*.{h,m}",
+          "subspecs": [
+            {
+              "name": "UIImage_Category",
+              "source_files": "WQBaseUIComponents/UICategory/UICategory_Vendor/UIImage_Category/*.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UICategory_UIKit",
+          "dependencies": {
+            "WQBaseUIComponents/UICategory/UICategory_Vendor": [
+
+            ]
+          },
+          "source_files": "WQBaseUIComponents/UICategory/UICategory_UIKit/*.{h,m}"
+        },
+        {
+          "name": "UICategory_NetWork",
+          "dependencies": {
+            "SDWebImage": [
+
+            ]
+          },
+          "source_files": "WQBaseUIComponents/UICategory/UICategory_NetWork/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "UILoading",
+      "dependencies": {
+        "MBProgressHUD": [
+          "~> 1.0.0"
+        ]
+      },
+      "resources": "WQBaseUIComponents/UILoading/MBProgressHUD.bundle",
+      "source_files": "WQBaseUIComponents/UILoading/*.{h,m}"
+    },
+    {
       "name": "UIHelp",
       "subspecs": [
         {
@@ -56,6 +100,12 @@
       "name": "WQCommonTableView",
       "dependencies": {
         "WQBaseUIComponents/UIHelp": [
+
+        ],
+        "Masonry": [
+
+        ],
+        "SDWebImage": [
 
         ]
       },

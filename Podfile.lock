@@ -1,23 +1,45 @@
 PODS:
-  - WQBaseUIComponents (0.0.1):
-    - WQBaseUIComponents/AnmationViews (= 0.0.1)
-    - WQBaseUIComponents/UICustom (= 0.0.1)
-    - WQBaseUIComponents/UIHelp (= 0.0.1)
-    - WQBaseUIComponents/WQCommonTableView (= 0.0.1)
-  - WQBaseUIComponents/AnmationViews (0.0.1):
-    - WQBaseUIComponents/AnmationViews/Animation (= 0.0.1)
-  - WQBaseUIComponents/AnmationViews/Animation (0.0.1)
-  - WQBaseUIComponents/UICustom (0.0.1):
-    - WQBaseUIComponents/UICustom/StarView (= 0.0.1)
-    - WQBaseUIComponents/UICustom/ViewCustom (= 0.0.1)
-  - WQBaseUIComponents/UICustom/StarView (0.0.1)
-  - WQBaseUIComponents/UICustom/ViewCustom (0.0.1)
-  - WQBaseUIComponents/UIHelp (0.0.1):
-    - WQBaseUIComponents/UIHelp/UIFounctionHelp (= 0.0.1)
-    - WQBaseUIComponents/UIHelp/UITransitionHelp (= 0.0.1)
-  - WQBaseUIComponents/UIHelp/UIFounctionHelp (0.0.1)
-  - WQBaseUIComponents/UIHelp/UITransitionHelp (0.0.1)
-  - WQBaseUIComponents/WQCommonTableView (0.0.1):
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - WQBaseUIComponents (0.1.5):
+    - WQBaseUIComponents/AnmationViews (= 0.1.5)
+    - WQBaseUIComponents/UICategory (= 0.1.5)
+    - WQBaseUIComponents/UICustom (= 0.1.5)
+    - WQBaseUIComponents/UIHelp (= 0.1.5)
+    - WQBaseUIComponents/UILoading (= 0.1.5)
+    - WQBaseUIComponents/WQCommonTableView (= 0.1.5)
+  - WQBaseUIComponents/AnmationViews (0.1.5):
+    - WQBaseUIComponents/AnmationViews/Animation (= 0.1.5)
+  - WQBaseUIComponents/AnmationViews/Animation (0.1.5)
+  - WQBaseUIComponents/UICategory (0.1.5):
+    - WQBaseUIComponents/UICategory/UICategory_NetWork (= 0.1.5)
+    - WQBaseUIComponents/UICategory/UICategory_UIKit (= 0.1.5)
+    - WQBaseUIComponents/UICategory/UICategory_Vendor (= 0.1.5)
+  - WQBaseUIComponents/UICategory/UICategory_NetWork (0.1.5):
+    - SDWebImage
+  - WQBaseUIComponents/UICategory/UICategory_UIKit (0.1.5):
+    - WQBaseUIComponents/UICategory/UICategory_Vendor
+  - WQBaseUIComponents/UICategory/UICategory_Vendor (0.1.5):
+    - WQBaseUIComponents/UICategory/UICategory_Vendor/UIImage_Category (= 0.1.5)
+  - WQBaseUIComponents/UICategory/UICategory_Vendor/UIImage_Category (0.1.5)
+  - WQBaseUIComponents/UICustom (0.1.5):
+    - WQBaseUIComponents/UICustom/StarView (= 0.1.5)
+    - WQBaseUIComponents/UICustom/ViewCustom (= 0.1.5)
+  - WQBaseUIComponents/UICustom/StarView (0.1.5)
+  - WQBaseUIComponents/UICustom/ViewCustom (0.1.5)
+  - WQBaseUIComponents/UIHelp (0.1.5):
+    - WQBaseUIComponents/UIHelp/UIFounctionHelp (= 0.1.5)
+    - WQBaseUIComponents/UIHelp/UITransitionHelp (= 0.1.5)
+  - WQBaseUIComponents/UIHelp/UIFounctionHelp (0.1.5)
+  - WQBaseUIComponents/UIHelp/UITransitionHelp (0.1.5)
+  - WQBaseUIComponents/UILoading (0.1.5):
+    - MBProgressHUD (~> 1.0.0)
+  - WQBaseUIComponents/WQCommonTableView (0.1.5):
+    - Masonry
+    - SDWebImage
     - WQBaseUIComponents/UIHelp
 
 DEPENDENCIES:
@@ -25,11 +47,14 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   WQBaseUIComponents:
-    :path: "/Users/ggg/Desktop/Components/WQBaseUIDemo"
+    :path: /Users/ggg/Desktop/Components/WQBaseUIDemo
 
 SPEC CHECKSUMS:
-  WQBaseUIComponents: 21e911d5cfb58388b8357cc5a5156e83be5c8303
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  WQBaseUIComponents: 329ab3b6672574557be912627f387d6664cc7ce2
 
 PODFILE CHECKSUM: 388dde665e68e717cb001a3f88d7ef9ef2ac9fd6
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
