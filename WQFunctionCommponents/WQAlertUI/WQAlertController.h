@@ -30,7 +30,11 @@ typedef void(^BottomAction)( WQAlertController * _Nonnull alertController);
 
 
 @interface WQAlertController : UIViewController
-
++(nonnull instancetype)alertViewWithCenterView:(nonnull UIView *)centerView;
++(nonnull instancetype)alertViewWithCenterView:(nonnull UIView *)centerView
+                                    bottomView:(nonnull UIView<WQAlertBottomViewProtocol> *)bottomView;
++(nonnull instancetype)alertViewWithTopView:(nullable UIView *)topView
+                                 centerView:(nonnull UIView *)centerView;
 /**自定义上下视图*/
 +(nonnull instancetype)alertViewWithTopView:(nullable UIView *)topView
                                  centerView:(nonnull UIView *)centerView
@@ -78,7 +82,7 @@ typedef void(^BottomAction)( WQAlertController * _Nonnull alertController);
    subViewShowAnimationType:(AnimationType)animationTye;
 @end
 
-@interface WQAlertController(Deprecated)
+@interface WQAlertController(WQDeprecated)
 
 
 +(nonnull instancetype)alertWithContent:(nonnull NSString *)content

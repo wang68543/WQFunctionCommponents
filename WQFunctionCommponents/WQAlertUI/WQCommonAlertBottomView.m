@@ -18,6 +18,12 @@
 @end
 @implementation WQCommonAlertBottomView
 
++(instancetype)defaultBottom{
+    return [self bottomViewWithConfirmTitle:NSLocalizedString(@"确定", nil) cancelTitle:NSLocalizedString(@"取消", nil)];
+}
++(instancetype)bottomViewWithConfirmTitle:(NSString *)confirmTitle cancelTitle:(NSString *)cancelTitle{
+    return [[self alloc] initWithConfirmTitle:confirmTitle cancelTitle:cancelTitle];
+}
 -(UIButton *)confirmBtn{
     if(!_confirmBtn){
         _confirmBtn = [[UIButton alloc] init];
@@ -54,9 +60,7 @@
     }
     return _midLineView;
 }
-+(instancetype)bottomViewWithConfirmTitle:(NSString *)confirmTitle cancelTitle:(NSString *)cancelTitle{
-    return [[self alloc] initWithConfirmTitle:confirmTitle cancelTitle:cancelTitle];
-}
+
 -(instancetype)initWithConfirmTitle:(NSString *)confirmTitle cancelTitle:(NSString *)cancelTitle{
     if(self = [super init]){
         _cancelTitle = cancelTitle;

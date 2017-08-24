@@ -70,6 +70,17 @@
 @end
 
 @implementation WQAlertController
++(instancetype)alertViewWithTopView:(UIView *)topView centerView:(UIView *)centerView{
+    return [self alertViewWithTopView:topView centerView:centerView bottomView:nil];
+}
+
++(instancetype)alertViewWithCenterView:(UIView *)centerView{
+    return [self alertViewWithTopView:nil centerView:centerView];
+}
++(instancetype)alertViewWithCenterView:(UIView *)centerView bottomView:(UIView <WQAlertBottomViewProtocol> *)bottomView{
+    return [self alertViewWithTopView:nil centerView:centerView bottomView:bottomView];
+}
+
 +(instancetype)alertViewWithTopView:(UIView *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView{
     return [[self alloc] initWithTopView:topView centerView:centerView bottomView:bottomView];
 }
@@ -365,7 +376,7 @@
 
 
 //TODO: -- -过时的初始化方法
-@implementation WQAlertController(Deprecated)
+@implementation WQAlertController(WQDeprecated)
 
 +(instancetype)alertViewWithTitle:(NSString *)title centerView:(UIView *)centerView{
     return [[self alloc] initWithTitle:title titleIcon:nil centerView:centerView confirmTitle:@"确定" cancelTitle:@"取消"];

@@ -16,6 +16,8 @@
 /**底部标题属性*/
 @property (strong ,nonatomic) NSDictionary * cancelAttribute;
 @property (strong ,nonatomic) NSDictionary * confirmAttribute;
+/** 默认的 bottomView */
++(instancetype)defaultBottom;
 +(instancetype)bottomViewWithConfirmTitle:(NSString *)confirmTitle cancelTitle:(NSString *)cancelTitle;
 -(instancetype)initWithConfirmTitle:(NSString *)confirmTitle cancelTitle:(NSString *)cancelTitle;
 
