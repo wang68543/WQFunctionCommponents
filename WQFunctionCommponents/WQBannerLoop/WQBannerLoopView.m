@@ -71,9 +71,18 @@
     CGSize size = [_pageControl sizeForNumberOfPages:datas.count];
     _pageControl.numberOfPages = datas.count;
     _pageControl.frame = CGRectMake(_pageW  - size.width - 20, 0,size.width, _pageBackground.frame.size.height);
-     _centerView.image = [UIImage imageNamed:[datas firstObject]];
+    
+     _centerView.image = [self getImageWithStr:[datas firstObject]];
     _centerView.tag = 0;
     _scrollView.contentOffset = CGPointMake(_pageW, 0);
+}
+//MARK: =========== 获取图片 ===========
+- (UIImage *)getImageWithStr:(NSString *)dataStr{
+    UIImage *image = [UIImage imageNamed:dataStr];
+    if (!image) {
+        image = [UIImage imageWithContentsOfFile:dataStr];
+    }
+    return image;
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -97,7 +106,7 @@
     _reusableView.tag = index;
 //    NSString *icon = [NSString stringWithFormat:@"0%ld.jpg", index];
     NSString *icon = self.datas[index];
-    _reusableView.image = [UIImage imageNamed:icon];
+    _reusableView.image = [self getImageWithStr:icon];
    
     // 2.显示了 最左 或者 最右 的图片
     if (offsetX < 0 || offsetX > w * 2) {

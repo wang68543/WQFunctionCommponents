@@ -7,7 +7,8 @@
 //
 
 #import "WQAlertCenterOptionsView.h"
-
+@interface WQAlertCenterOptionsView()<UITableViewDelegate,UITableViewDataSource>
+@end
 @implementation WQAlertCenterOptionsView
 
 +(instancetype)optionsView{

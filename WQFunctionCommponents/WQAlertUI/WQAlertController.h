@@ -30,7 +30,9 @@ typedef void(^BottomAction)( WQAlertController * _Nonnull alertController);
 
 
 @interface WQAlertController : UIViewController
+
 +(nonnull instancetype)alertViewWithCenterView:(nonnull UIView *)centerView;
+
 +(nonnull instancetype)alertViewWithCenterView:(nonnull UIView *)centerView
                                     bottomView:(nonnull UIView<WQAlertBottomViewProtocol> *)bottomView;
 +(nonnull instancetype)alertViewWithTopView:(nullable UIView *)topView
@@ -39,7 +41,10 @@ typedef void(^BottomAction)( WQAlertController * _Nonnull alertController);
 +(nonnull instancetype)alertViewWithTopView:(nullable UIView *)topView
                                  centerView:(nonnull UIView *)centerView
                                  bottomView:(nullable UIView <WQAlertBottomViewProtocol>*)bottomView;
-
+//+(nonnull instancetype)alertViewWithTopView:(nullable UIView *)topView
+//                                 centerView:(nonnull UIView *)centerView
+//                                 bottomView:(nullable UIView <WQAlertBottomViewProtocol>*)bottomView
+//                         containerViewWidth:(CGFloat)containerViewWith;
 @property (strong ,nonatomic,nullable) UIColor *tintColor;
 /**整个视图的圆角*/
 @property (assign ,nonatomic) CGFloat containerViewRadius;

@@ -64,6 +64,7 @@
     NSMutableDictionary *_actions;
     UITapGestureRecognizer *_tapBackGR;
     BOOL _hasObserver;
+    CGFloat _containerViewWidth;
 }
 @property (strong ,nonatomic) UIView *containerView;
 @property (strong ,nonatomic) WQControllerTransition *bottomTranstion;
@@ -84,7 +85,9 @@
 +(instancetype)alertViewWithTopView:(UIView *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView{
     return [[self alloc] initWithTopView:topView centerView:centerView bottomView:bottomView];
 }
-
+//+(instancetype)alertViewWithTopView:(UIView *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView containerViewWidth:(CGFloat)containerViewWith{
+//     return [[self alloc] initWithTopView:topView centerView:centerView bottomView:bottomView containerViewWidth:containerViewWith];
+//}
 
 -(UIView *)containerView{
     if(!_containerView){
@@ -93,12 +96,15 @@
     return _containerView;
 }
 
--(instancetype)initWithTopView:(UIView *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView{
+-(instancetype)initWithTopView:(UIView *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView {
     if(self = [super init]){
         _actions = [NSMutableDictionary dictionary];
         _centerViews = [NSMutableArray array];
         _titleView = topView;
         _bottomView = bottomView;
+        
+//        _containerViewWidth = containerViewWith;
+        
         if(topView){
           [self.containerView addSubview:topView];
         }
