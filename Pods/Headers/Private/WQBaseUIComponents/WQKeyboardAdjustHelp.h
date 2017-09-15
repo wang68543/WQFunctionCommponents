@@ -1,1 +1,1 @@
-../../../../../WQBaseUIDemo/WQBaseUIComponents/UIHelp/UIFounctionHelp/WQKeyboardAdjustHelp.h
+../../../../../WQBaseUIComponents/WQBaseUIComponents/UIHelp/UIFounctionHelp/WQKeyboardAdjustHelp.h

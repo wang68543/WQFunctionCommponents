@@ -1,1 +1,1 @@
-../../../../../WQBaseUIDemo/WQBaseUIComponents/UICustom/StarView/WQStarContainerView.h
+../../../../../WQBaseUIComponents/WQBaseUIComponents/UICustom/StarView/WQStarContainerView.h

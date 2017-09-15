@@ -1,1 +1,1 @@
-../../../../../WQBaseUIDemo/WQBaseUIComponents/UICategory/UICategory_Vendor/UIBarButtonItem+Badge.h
+../../../../../WQBaseUIComponents/WQBaseUIComponents/UICategory/UICategory_Vendor/UIBarButtonItem+Badge.h

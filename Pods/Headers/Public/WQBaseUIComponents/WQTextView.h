@@ -1,1 +1,1 @@
-../../../../../WQBaseUIDemo/WQBaseUIComponents/UICustom/ViewCustom/WQTextView.h
+../../../../../WQBaseUIComponents/WQBaseUIComponents/UICustom/ViewCustom/WQTextView.h

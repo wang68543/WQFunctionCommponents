@@ -1,6 +1,6 @@
 {
   "name": "WQBaseUIComponents",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "summary": "基础组件(UI部分)",
   "description": "平常自己使用一些频率比较高得工具、控件的封装,后期使用的时候也不断维护、更新",
   "homepage": "https://github.com/wang68543/WQBaseUIComponents",
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://github.com/wang68543/WQBaseUIComponents.git",
-    "tag": "0.1.5"
+    "tag": "0.1.6"
   },
   "requires_arc": true,
   "source_files": "WQBaseUIComponents/WQBaseUIComponents.h",
+  "dependencies": {
+    "SDWebImage": [
+      ">= 4.0.0"
+    ]
+  },
   "subspecs": [
     {
       "name": "AnmationViews",
@@ -64,11 +69,6 @@
         },
         {
           "name": "UICategory_NetWork",
-          "dependencies": {
-            "SDWebImage": [
-
-            ]
-          },
           "source_files": "WQBaseUIComponents/UICategory/UICategory_NetWork/*.{h,m}"
         }
       ]
@@ -103,10 +103,7 @@
 
         ],
         "Masonry": [
-
-        ],
-        "SDWebImage": [
-
+          ">= 1.0.2"
         ]
       },
       "source_files": "WQBaseUIComponents/CommonTableView/**/*.{h,m}"

@@ -11,6 +11,7 @@
 
 @protocol WQAlertBottomViewDelegate <NSObject>
 - (void)bottomViewDidClickConfirmAction;
+@optional
 - (void)bottomViewDidClickCancelAction;
 @end
 

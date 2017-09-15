@@ -110,6 +110,7 @@
         }
         [self configCenterView:centerView];
         if(bottomView){
+            bottomView.delegate = self;
            [self.containerView addSubview:bottomView];
         }else{
              [self configTapGR];

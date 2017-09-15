@@ -1,1 +1,1 @@
-../../../../../WQBaseUIDemo/WQBaseUIComponents/UICategory/UICategory_Vendor/Colours.h
+../../../../../WQBaseUIComponents/WQBaseUIComponents/UICategory/UICategory_Vendor/Colours.h

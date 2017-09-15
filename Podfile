@@ -2,5 +2,5 @@
 # platform :ios, '8.0'
 
 target 'WQFunctionDemo' do
-pod 'WQBaseUIComponents',:path =>'./WQBaseUIDemo'
+pod 'WQBaseUIComponents',:path =>'../WQBaseUIComponents'
 end

@@ -1,1 +1,1 @@
-../../../../../WQBaseUIDemo/WQBaseUIComponents/UICategory/UICategory_UIKit/UIColor+WQColor.h
+../../../../../WQBaseUIComponents/WQBaseUIComponents/UICategory/UICategory_UIKit/UIColor+WQColor.h

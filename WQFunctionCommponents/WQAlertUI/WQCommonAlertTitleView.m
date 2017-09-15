@@ -69,6 +69,7 @@
 }
 -(void)configProperty{
     if(_titleIcon){
+        self.iconView.image = _titleIcon;
         [self addSubview:self.iconView];
     }else{
         [_iconView removeFromSuperview];
@@ -102,7 +103,7 @@
     CGFloat imageW = _titleIcon.size.width;
     CGFloat imageH = _titleIcon.size.height;
     CGFloat imageTopPadding = 8.0;
-    CGFloat imageMaxH = imageH - imageTopPadding*2;
+    CGFloat imageMaxH = viewH - imageTopPadding*2;
     CGFloat scale = 1.0;
     CGFloat sectionPadiing = 10.0;
     if(imageH > imageMaxH){

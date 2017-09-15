@@ -1,1 +1,1 @@
-../../../../../WQBaseUIDemo/WQBaseUIComponents/UICategory/UICategory_UIKit/UIBarButtonItem+WQInitHelp.h
+../../../../../WQBaseUIComponents/WQBaseUIComponents/UICategory/UICategory_UIKit/UIBarButtonItem+WQInitHelp.h

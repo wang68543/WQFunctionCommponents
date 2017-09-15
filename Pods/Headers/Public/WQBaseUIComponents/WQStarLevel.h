@@ -1,1 +1,1 @@
-../../../../../WQBaseUIDemo/WQBaseUIComponents/UICustom/StarView/WQStarLevel.h
+../../../../../WQBaseUIComponents/WQBaseUIComponents/UICustom/StarView/WQStarLevel.h
