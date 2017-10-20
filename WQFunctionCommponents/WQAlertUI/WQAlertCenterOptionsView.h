@@ -12,9 +12,9 @@
 +(instancetype)optionsView;
 /** 默认rowHeight 44.0 */
 @property (strong ,nonatomic,readonly) UITableView *tableView;
-/** 隐藏Cell最后一个分割线 */
+/** 隐藏Cell最后一个分割线 默认YES */
 @property (assign  ,nonatomic) BOOL hideLastSepratorLine;
-/** 注册cell  默认为系统cell */
+/** 注册cell  默认为UITableViewCell */
 - (void)registerCell:(NSString *)clsStr isNib:(BOOL)nib;
 /** 选项个数 */
 @property (assign  ,nonatomic) NSUInteger optionsCount;

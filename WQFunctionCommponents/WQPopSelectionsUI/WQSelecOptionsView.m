@@ -64,7 +64,7 @@
     }
    
 }
--(void)hideWithCompeletion:(void(^)())compeletion{
+-(void)hideWithCompeletion:(void(^)(void))compeletion{
     [UIView animateWithDuration:0.15 animations:^{
         self.tableView.bounds = CGRectMake(self.tableView.bounds.origin.x, self.tableView.bounds.origin.y, self.tableView.bounds.size.width, 0.0);
     } completion:^(BOOL finished) {

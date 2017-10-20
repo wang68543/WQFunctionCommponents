@@ -131,6 +131,7 @@ static CGFloat const TitleViewHeight = 49.0;
 }
 @synthesize date = _date;
 -(void)setDate:(NSDate *)date{
+    if (!date) return;
     _date = date;
     if(self.customDatePicker){
         _customDatePicker.date = date;

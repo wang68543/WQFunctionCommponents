@@ -13,7 +13,9 @@
 #define APP_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define APP_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
+//MARK: =========== centerView 便捷初始化方法 ===========
 @implementation UIView (WQAlertCenterView)
+
 +(instancetype)centerViewWithText:(NSString *)text{
     return [self centerViewWithText:text edges:UIEdgeInsetsMake(15.0, 15.0, 15.0, 15.0)];
 }
@@ -59,18 +61,20 @@
 }
 
 @end
-//TODO: -- -具体的弹出框
+//MARK: =========== 具体的弹出框 ===========
 @interface WQAlertController ()<WQAlertBottomViewDelegate,UIGestureRecognizerDelegate>{
     NSMutableDictionary *_actions;
     UITapGestureRecognizer *_tapBackGR;
     BOOL _hasObserver;
     CGFloat _containerViewWidth;
 }
+
 @property (strong ,nonatomic) UIView *containerView;
 @property (strong ,nonatomic) WQControllerTransition *bottomTranstion;
 @end
 
 @implementation WQAlertController
+
 +(instancetype)alertViewWithTopView:(UIView *)topView centerView:(UIView *)centerView{
     return [self alertViewWithTopView:topView centerView:centerView bottomView:nil];
 }
@@ -80,6 +84,9 @@
 }
 +(instancetype)alertViewWithCenterView:(UIView *)centerView bottomView:(UIView <WQAlertBottomViewProtocol> *)bottomView{
     return [self alertViewWithTopView:nil centerView:centerView bottomView:bottomView];
+}
++(instancetype)alertDefaultBottomWithTitle:(NSString *)title centerView:(UIView *)centerView{
+    return [self alertViewWithTopView:[WQCommonAlertTitleView commonTitle:title] centerView:centerView bottomView:[WQCommonAlertBottomView defaultBottom]];
 }
 
 +(instancetype)alertViewWithTopView:(UIView *)topView centerView:(UIView *)centerView bottomView:(UIView<WQAlertBottomViewProtocol> *)bottomView{
@@ -262,6 +269,16 @@
     if(!inViewController){
         inViewController = [WQAPPHELP visibleViewController];
     }
+    //防止重复弹出 (只和当前正在显示的控制器比较)
+    if (_preventDuplicateShowmarks) {
+        UIViewController *preventController = [WQAPPHELP visibleViewController];
+        if ([preventController isKindOfClass:[WQAlertController class]] ) {
+            WQAlertController *preAlert = (WQAlertController *)preventController;
+            if ([preAlert.preventDuplicateShowmarks isEqualToString:_preventDuplicateShowmarks]) {
+                return;
+            }
+        }
+    }
     _bottomTranstion = [WQControllerTransition transitionWithAnimatedView:self.containerView];
     _bottomTranstion.showOneSubViewType = showSubViewType;
     _bottomTranstion.animationType = animationTye;
@@ -381,8 +398,7 @@
 
 @end
 
-
-//TODO: -- -过时的初始化方法
+//MARK: =========== 过时的初始化方法 ===========
 @implementation WQAlertController(WQDeprecated)
 
 +(instancetype)alertViewWithTitle:(NSString *)title centerView:(UIView *)centerView{

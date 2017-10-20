@@ -31,13 +31,24 @@ typedef void(^BottomAction)( WQAlertController * _Nonnull alertController);
 
 @interface WQAlertController : UIViewController
 
+/**
+ 构造默认的顶部、底部拦样式的弹出框
+ */
++(nonnull instancetype)alertDefaultBottomWithTitle:(nonnull NSString *)title
+                                        centerView:(nonnull UIView *)centerView;
+
 +(nonnull instancetype)alertViewWithCenterView:(nonnull UIView *)centerView;
 
 +(nonnull instancetype)alertViewWithCenterView:(nonnull UIView *)centerView
                                     bottomView:(nonnull UIView<WQAlertBottomViewProtocol> *)bottomView;
 +(nonnull instancetype)alertViewWithTopView:(nullable UIView *)topView
                                  centerView:(nonnull UIView *)centerView;
-/**自定义上下视图*/
+
+/**
+ 自定义上下视图
+
+ @param centerView 必须要先有尺寸 
+ */
 +(nonnull instancetype)alertViewWithTopView:(nullable UIView *)topView
                                  centerView:(nonnull UIView *)centerView
                                  bottomView:(nullable UIView <WQAlertBottomViewProtocol>*)bottomView;
@@ -57,6 +68,8 @@ typedef void(^BottomAction)( WQAlertController * _Nonnull alertController);
 /**当中间点击切换的时候会有多个View*/
 @property (strong ,nonatomic,nonnull ,readonly) NSMutableArray *centerViews;
 
+/** 防止同一个类型的控件重复弹出 */
+@property (copy    ,nonatomic,nullable) NSString *  preventDuplicateShowmarks;
 
 -(void)addActionType:(nonnull NSString *const)type action:(nonnull BottomAction)action;
 

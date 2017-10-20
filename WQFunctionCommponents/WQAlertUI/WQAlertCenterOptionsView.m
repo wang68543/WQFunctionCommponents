@@ -26,6 +26,8 @@ static NSString *const identifire = @"cell";
 }
 
 - (void)commonInit{
+    _hideLastSepratorLine = YES;
+    
     _tableView = [[UITableView alloc] init];
     _tableView.dataSource = self;
     _tableView.delegate = self;
@@ -33,6 +35,7 @@ static NSString *const identifire = @"cell";
     //用于缺省自定义
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifire];
     [self addSubview:_tableView];
+    
 }
 -(void)layoutSubviews{
     [super layoutSubviews];

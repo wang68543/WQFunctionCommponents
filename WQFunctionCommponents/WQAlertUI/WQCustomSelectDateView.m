@@ -81,6 +81,7 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
 
 @synthesize date = _date;
 -(void)setDate:(NSDate *)date{
+    if (!date) return;
     _date = date;
     _dateCompments = [self.currentClendar components:kUnits fromDate:date];
     switch (_customDateMode) {
@@ -181,13 +182,13 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
         UILabel *startTip = [[UILabel alloc] init];
         startTip.textAlignment = NSTextAlignmentCenter;
         _startTip = startTip;
-        startTip.text = NSLocalizedString(@"起始时间", nil);
+        startTip.text = NSLocalizedString(@"起始时间",nil);
         startTip.font = [UIFont systemFontOfSize:15.0];
         [_doubleDateTipView addSubview:startTip];
         
         UILabel *endTip = [[UILabel alloc] init];
         endTip.textAlignment = NSTextAlignmentCenter;
-        endTip.text = NSLocalizedString(@"结束时间", nil);
+        endTip.text = NSLocalizedString(@"结束时间",nil);
         endTip.font = [UIFont systemFontOfSize:15.0];
         _endTip = endTip;
         [_doubleDateTipView addSubview:endTip];
@@ -395,6 +396,7 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
 @synthesize secondDate = _secondDate;
 
 -(void)setSecondDate:(NSDate *)secondDate{
+    if (!secondDate) return;
     _secondDate = secondDate;
     NSDateComponents *cmps = [self.currentClendar components:kUnits fromDate:secondDate];
     switch (_customDateMode) {
@@ -410,6 +412,7 @@ static NSInteger const kUnits = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalenda
     
 }
 -(NSDate *)secondDate{
+    
     NSDateComponents *cmps = [[NSDateComponents alloc] init];
     switch (_customDateMode) {
        

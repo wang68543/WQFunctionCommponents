@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger,ShowPostion) {
  */
 -(void)showWithView:(UIView *)view;
 -(void)hide;
--(void)hideWithCompeletion:(void(^)())compeletion;
+-(void)hideWithCompeletion:(void(^)(void))compeletion;
 @property (assign ,nonatomic,readonly,getter=isShowing) BOOL showing;
 /**
  *  tableView的cell高度
