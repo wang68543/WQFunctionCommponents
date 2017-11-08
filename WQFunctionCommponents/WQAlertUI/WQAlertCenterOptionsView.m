@@ -12,13 +12,13 @@
 @implementation WQAlertCenterOptionsView
 static NSString *const identifire = @"cell";
 //MARK: =========== init ===========
-+(instancetype)optionsView{
-    return [[self alloc] init];
++(instancetype)optionsViewWithBounds:(CGRect)bounds{
+    return [[self alloc] initWithFrame:bounds];
 }
 
-- (instancetype)init
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     if (self) {
         [self commonInit];
     }
@@ -31,7 +31,7 @@ static NSString *const identifire = @"cell";
     _tableView = [[UITableView alloc] init];
     _tableView.dataSource = self;
     _tableView.delegate = self;
-    _tableView.rowHeight = 44.0;
+    _tableView.rowHeight = OPTIONS_CELL_DEFAULT_HEIGHT;
     //用于缺省自定义
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifire];
     [self addSubview:_tableView];
@@ -52,14 +52,23 @@ static NSString *const identifire = @"cell";
 //MARK: =========== tableView data source ===========
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.optionsCount;
+    if (self.datas.count > 0) {
+        return self.datas.count;
+    }else{
+        return self.optionsCount;
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifire forIndexPath:indexPath];
     if (self.cellForRow) {
       cell = self.cellForRow(cell, indexPath);
+    }else if(self.datas.count > 0){
+        cell.textLabel.font = [UIFont systemFontOfSize:15.0];
+        cell.textLabel.text = self.datas[indexPath.row];
     }
+    
+    
     if (indexPath.row + 1 == [tableView numberOfRowsInSection:indexPath.section]) {
         [cell setSeparatorInset:UIEdgeInsetsZero];
 //        [cell setLayoutMargins:UIEdgeInsetsZero];

@@ -18,7 +18,14 @@
 +(instancetype)showSelectPhotoDelegate:(id<WQPhotoSelectedDelegate>) delegate inController:(UIViewController *)inController;
 
 @property (assign ,nonatomic) BOOL allowsEditing;
+
 -(void)showInController:(UIViewController *)controller;
+
+/** 代理方法实现了 优先调用代理方法 */
 @property (weak ,nonatomic) id<WQPhotoSelectedDelegate> delegate;
 
+/** 回调单张图片 */
+@property (copy    ,nonatomic) void (^didFinshSelectedImage)(UIImage *image);
+/** 回调图片信息 */
+@property (copy    ,nonatomic) void (^didFinshSelectedImageInfo)(NSDictionary *imageInfo);
 @end

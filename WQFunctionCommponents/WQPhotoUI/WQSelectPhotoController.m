@@ -18,7 +18,7 @@
 #define btnFont [UIFont systemFontOfSize:16.0]
 @interface WQSelectPhotoController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (strong ,nonatomic) UIView *actionSheetView;
-@property (strong ,nonatomic,readonly) UIViewController *controller;
+//@property (strong ,nonatomic,readonly) UIViewController *controller;
 @property (strong ,nonatomic) WQControllerTransition *bottomTranstion;
 
 @end
@@ -58,7 +58,7 @@
 
 -(void)showInController:(UIViewController *)controller{
     if(!controller)controller = [WQAPPHELP visibleViewController];
-    _controller = controller;
+//    _controller = controller;
     self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
 //    self.view.backgroundColor = [UIColor clearColor];
     
@@ -169,17 +169,32 @@
 #pragma mark --UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    
+//    UIViewController *rootVC = self.presentingViewController;
+//    while (rootVC.presentingViewController) {
+//        rootVC = rootVC.presentingViewController;
+//    }
+//    [rootVC dismissViewControllerAnimated:YES completion:nil];
+//
+////    [picker dismissViewControllerAnimated:NO completion:NULL];
     __weak typeof(self) weakSelf = self;
     //self.controller 选中了 同时让当前控制器也销毁
-    [self.controller dismissViewControllerAnimated:YES completion:^{
+    //self.controller
+    /*
+     * 在之前的文档中可以看到，在A中执行dismissViewController方法，B会被直接remove掉，这个毫无问题。但是如果A present B和dismiss B用的是自定义动画，那么即使此时并不执行B的dismiss动画，依然会有问题
+     */
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
         //
         if([weakSelf.delegate respondsToSelector:@selector(photoSelectedViewDidFinshSelectedImage:)]){
             [weakSelf.delegate photoSelectedViewDidFinshSelectedImage:info[UIImagePickerControllerOriginalImage]];
-        }else{
-            if([weakSelf.delegate respondsToSelector:@selector(photoSelectedViewDidFinshSelected:)]){
+        }else if([weakSelf.delegate respondsToSelector:@selector(photoSelectedViewDidFinshSelected:)]){
                 [weakSelf.delegate photoSelectedViewDidFinshSelected:info];
-            }
+        }else if (weakSelf.didFinshSelectedImageInfo){
+            weakSelf.didFinshSelectedImageInfo(info);
+        }else if (weakSelf.didFinshSelectedImage){
+            weakSelf.didFinshSelectedImage(info[UIImagePickerControllerOriginalImage]);
+        }else{
+            NSAssert(NO, @"没有实现图片选择回调功能");
         }
 
     }];
