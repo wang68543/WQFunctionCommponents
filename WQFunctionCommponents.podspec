@@ -86,6 +86,10 @@ Pod::Spec.new do |s|
     s.subspec 'WQVerticalLoopText' do |ss|
       ss.source_files = 'WQFunctionCommponents/WQVerticalLoopText/*.{h,m}'
     end
+    s.subspec 'WQAttributeInput' do |ss|
+      ss.dependency 'Masonry'
+      ss.source_files = 'WQFunctionCommponents/WQAttributeInput/*.{h,m}'
+    end
  
   s.dependency 'WQBaseUIComponents'
 end

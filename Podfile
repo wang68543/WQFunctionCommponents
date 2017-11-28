@@ -3,4 +3,5 @@
 
 target 'WQFunctionDemo' do
 pod 'WQBaseUIComponents',:path =>'../WQBaseUIComponents'
+pod 'Masonry'
 end

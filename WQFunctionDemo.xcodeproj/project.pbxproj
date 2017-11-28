@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		229B5D748F7A88A9B8DC71E4 /* libPods-WQFunctionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2F726620D15847753C45A2 /* libPods-WQFunctionDemo.a */; };
+		2D4C22701FB9425700C226CE /* FontStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C226B1FB9423A00C226CE /* FontStyleView.m */; };
+		2D4C22711FB9425700C226CE /* WQAttibuteInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C226D1FB9423A00C226CE /* WQAttibuteInputView.m */; };
+		2D4C22721FB9425700C226CE /* WQAttributeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C226F1FB9423A00C226CE /* WQAttributeTextView.m */; };
 		DE3446EB1F0C9A7300645D32 /* WQSelectPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3446EA1F0C9A7300645D32 /* WQSelectPhotoController.m */; };
 		DE52CA3E1ED8071600FDE643 /* WQAlertCenterOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9EC1ED8071600FDE643 /* WQAlertCenterOptionsView.m */; };
 		DE52CA3F1ED8071600FDE643 /* WQAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9EE1ED8071600FDE643 /* WQAlertController.m */; };
@@ -61,6 +64,12 @@
 
 /* Begin PBXFileReference section */
 		278DBFC22EFA8038731DCCCF /* Pods-WQFunctionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQFunctionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WQFunctionDemo/Pods-WQFunctionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2D4C226A1FB9423A00C226CE /* FontStyleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontStyleView.h; sourceTree = "<group>"; };
+		2D4C226B1FB9423A00C226CE /* FontStyleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontStyleView.m; sourceTree = "<group>"; };
+		2D4C226C1FB9423A00C226CE /* WQAttibuteInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQAttibuteInputView.h; sourceTree = "<group>"; };
+		2D4C226D1FB9423A00C226CE /* WQAttibuteInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQAttibuteInputView.m; sourceTree = "<group>"; };
+		2D4C226E1FB9423A00C226CE /* WQAttributeTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQAttributeTextView.h; sourceTree = "<group>"; };
+		2D4C226F1FB9423A00C226CE /* WQAttributeTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQAttributeTextView.m; sourceTree = "<group>"; };
 		BE2F726620D15847753C45A2 /* libPods-WQFunctionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WQFunctionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE218D7DDDC8DB52F74AD572 /* Pods-WQFunctionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQFunctionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WQFunctionDemo/Pods-WQFunctionDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DE3446E91F0C9A7300645D32 /* WQSelectPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQSelectPhotoController.h; sourceTree = "<group>"; };
@@ -161,6 +170,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D4C22691FB9423A00C226CE /* WQAttributeInput */ = {
+			isa = PBXGroup;
+			children = (
+				2D4C226A1FB9423A00C226CE /* FontStyleView.h */,
+				2D4C226B1FB9423A00C226CE /* FontStyleView.m */,
+				2D4C226C1FB9423A00C226CE /* WQAttibuteInputView.h */,
+				2D4C226D1FB9423A00C226CE /* WQAttibuteInputView.m */,
+				2D4C226E1FB9423A00C226CE /* WQAttributeTextView.h */,
+				2D4C226F1FB9423A00C226CE /* WQAttributeTextView.m */,
+			);
+			path = WQAttributeInput;
+			sourceTree = "<group>";
+		};
 		82A6FD109728D5475B32DAC0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +203,7 @@
 		DE52C9E81ED8071600FDE643 /* WQFunctionCommponents */ = {
 			isa = PBXGroup;
 			children = (
+				2D4C22691FB9423A00C226CE /* WQAttributeInput */,
 				DE52C9E91ED8071600FDE643 /* WQAlertUI */,
 				DE52C9F61ED8071600FDE643 /* WQBannerLoop */,
 				DE52C9F91ED8071600FDE643 /* WQClendarUI */,
@@ -557,6 +580,9 @@
 			files = (
 				DE52CA431ED8071600FDE643 /* WQBannerLoopView.m in Sources */,
 				DE52CA511ED8071700FDE643 /* WQActionSheetController.m in Sources */,
+				2D4C22701FB9425700C226CE /* FontStyleView.m in Sources */,
+				2D4C22711FB9425700C226CE /* WQAttibuteInputView.m in Sources */,
+				2D4C22721FB9425700C226CE /* WQAttributeTextView.m in Sources */,
 				DE3446EB1F0C9A7300645D32 /* WQSelectPhotoController.m in Sources */,
 				DE52CA3E1ED8071600FDE643 /* WQAlertCenterOptionsView.m in Sources */,
 				DE52CA411ED8071600FDE643 /* WQCommonAlertTitleView.m in Sources */,
