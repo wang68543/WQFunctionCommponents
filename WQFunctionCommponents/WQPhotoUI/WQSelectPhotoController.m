@@ -7,6 +7,8 @@
 //
 
 #import "WQSelectPhotoController.h"
+#import <Photos/Photos.h>
+
 #import <WQBaseUIComponents/WQAPPHELP.h>
 #import <WQBaseUIComponents/WQControllerTransition.h>
 
@@ -16,11 +18,10 @@
 #define subViewH  50
 #define subBGColor(alph) [UIColor colorWithRed:242/255.0 green:244/255.0 blue:245/255.0 alpha:(alph)]
 #define btnFont [UIFont systemFontOfSize:16.0]
-@interface WQSelectPhotoController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface WQSelectPhotoController ()
 @property (strong ,nonatomic) UIView *actionSheetView;
 //@property (strong ,nonatomic,readonly) UIViewController *controller;
 @property (strong ,nonatomic) WQControllerTransition *bottomTranstion;
-
 @end
 
 @implementation WQSelectPhotoController
@@ -40,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.actionSheetView];
-    
+ 
 }
 -(UIView *)actionSheetView{
     if(!_actionSheetView){
@@ -154,18 +155,22 @@
 - (void)openMediaWithSourceType:(UIImagePickerControllerSourceType)sourceType{
     if (![UIImagePickerController isSourceTypeAvailable:sourceType]){
         NSLog(@"此功能不支持");
+        
         return;
     }
     UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
     ipc.allowsEditing = self.allowsEditing;
     ipc.sourceType = sourceType;
     ipc.delegate = self;
+ 
     UINavigationBar *navBar = [UINavigationBar appearance];
     if (!navBar.barTintColor) {
-         ipc.navigationBar.barTintColor = [UIColor groupTableViewBackgroundColor];
+         ipc.navigationBar.barTintColor = [UIColor blueColor];
     }
     [self presentViewController:ipc animated:YES completion:nil];
+    
 }
+
 #pragma mark --UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
@@ -182,7 +187,9 @@
     /*
      * 在之前的文档中可以看到，在A中执行dismissViewController方法，B会被直接remove掉，这个毫无问题。但是如果A present B和dismiss B用的是自定义动画，那么即使此时并不执行B的dismiss动画，依然会有问题
      */
+    //如果 调用系统的一些方法没响应 很大几率是其他分类替换掉了
     [picker dismissViewControllerAnimated:YES completion:NULL];
+    
     [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
         //
         if([weakSelf.delegate respondsToSelector:@selector(photoSelectedViewDidFinshSelectedImage:)]){
@@ -198,9 +205,11 @@
         }
 
     }];
-    
 }
-
+//如果 运行时被拦截 这里就不好
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
+}
 #pragma mark --其他视图的点击事件
 -(void)buttonDidClicked:(UIButton *)btn{
     if(1 == btn.tag){//拍照
@@ -208,7 +217,9 @@
     }else if(2 == btn.tag){//相册
         [self openAlbum];
     }
-    
 }
-
+- (void)dealloc
+{
+    NSLog(@"销毁了");
+}
 @end

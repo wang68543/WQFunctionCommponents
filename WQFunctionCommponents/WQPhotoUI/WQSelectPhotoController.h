@@ -14,7 +14,11 @@
 //FIXME: 暂时还没有实现 
 -(void)photoSelectedViewDidFinshSelectedImages:(NSArray *)images;
 @end
-@interface WQSelectPhotoController : UIViewController
+
+/**
+ NSPhotoLibraryAddUsageDescription iOS11之后 相册写需要添加这个
+ */
+@interface WQSelectPhotoController : UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 +(instancetype)showSelectPhotoDelegate:(id<WQPhotoSelectedDelegate>) delegate inController:(UIViewController *)inController;
 
 @property (assign ,nonatomic) BOOL allowsEditing;
