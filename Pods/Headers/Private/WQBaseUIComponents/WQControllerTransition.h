@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/UIHelp/UITransitionHelp/WQControllerTransition.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/UIHelp/UITransitionHelp/WQControllerTransition.h

@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/UICategory/UICategory_Vendor/UIImage_Category/UIImage+Gif.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/UICategory/UICategory_Vendor/UIImage_Category/UIImage+Gif.h

@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/UIHelp/UIFounctionHelp/WQBroserController.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/UIHelp/UIFounctionHelp/WQBroserController.h

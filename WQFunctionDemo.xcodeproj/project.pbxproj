@@ -527,11 +527,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WQFunctionDemo/Pods-WQFunctionDemo-resources.sh",
-				"${PODS_ROOT}/../../WQBaseUIComponents/WQBaseUIComponents/UILoading/MBProgressHUD.bundle",
+				"${PODS_ROOT}/../../WQBaseUIDemo/WQBaseUIComponents/UILoading/MBProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

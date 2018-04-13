@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/CommonTableView/Model/WQCommonArrowItem.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/CommonTableView/Model/WQCommonArrowItem.h

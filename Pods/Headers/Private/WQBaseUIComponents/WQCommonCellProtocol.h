@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/CommonTableView/ViewModel/WQCommonCellProtocol.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/CommonTableView/ViewModel/WQCommonCellProtocol.h

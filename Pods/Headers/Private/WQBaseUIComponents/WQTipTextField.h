@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/UICustom/ViewCustom/WQTipTextField.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/UICustom/ViewCustom/WQTipTextField.h

@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/UICategory/UICategory_Vendor/UIGestureRecognizer+Block.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/UICategory/UICategory_Vendor/UIGestureRecognizer+Block.h

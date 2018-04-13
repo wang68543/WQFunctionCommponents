@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/UICustom/ViewCustom/WQEdgeTitleButton.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/UICustom/ViewCustom/WQEdgeTitleButton.h

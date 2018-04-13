@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/UICategory/UICategory_Vendor/UIImage_Category/UIImage+SubImage.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/UICategory/UICategory_Vendor/UIImage_Category/UIImage+SubImage.h

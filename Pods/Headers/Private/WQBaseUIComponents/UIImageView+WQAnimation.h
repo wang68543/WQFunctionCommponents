@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/UICategory/UICategory_UIKit/UIImageView+WQAnimation.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/UICategory/UICategory_UIKit/UIImageView+WQAnimation.h

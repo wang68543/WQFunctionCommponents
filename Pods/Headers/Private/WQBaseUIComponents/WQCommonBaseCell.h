@@ -1,1 +1,1 @@
-../../../../../WQBaseUIComponents/WQBaseUIComponents/CommonTableView/View/WQCommonBaseCell.h
+../../../../../WQBaseUIDemo/WQBaseUIComponents/CommonTableView/View/WQCommonBaseCell.h
