@@ -448,7 +448,6 @@
 				DE7747801ED3378800E034D4 /* Sources */,
 				DE7747811ED3378800E034D4 /* Frameworks */,
 				DE7747821ED3378800E034D4 /* Resources */,
-				A42AEDCA4C677D7731153DAF /* [CP] Embed Pods Frameworks */,
 				53937BB3223885E75577D22C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -536,21 +535,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WQFunctionDemo/Pods-WQFunctionDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A42AEDCA4C677D7731153DAF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WQFunctionDemo/Pods-WQFunctionDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D01E386AD432C82AE299758A /* [CP] Check Pods Manifest.lock */ = {
